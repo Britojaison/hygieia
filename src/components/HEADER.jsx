@@ -7,7 +7,7 @@ function header()
             <img className="logo" src={Logo} alt="logo"></img>
             <img className="logo" src={Logo} alt="logo"></img>
             <img className="logo" src={Logo} alt="logo"></img>
-
+            <h2>nayana</h2>
         </div>
     )
 }
