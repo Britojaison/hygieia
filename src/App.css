@@ -1,23 +1,26 @@
-html{
-margin: 0;
-padding: 0;
-}
-
-body{
+html {
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-.header{
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   background-color: aqua;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
+  padding: 0 1rem ;
 }
 
 .logo {
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Centering block element */
-  margin: 0 ; /* Center horizontally */
-  padding: 10px; /* Optional: Add some padding around the logo */
+  width: 170px;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 10px;
 }
