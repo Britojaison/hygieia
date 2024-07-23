@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.png"
+import bg from "../assets/image.png"
 
 function header()
 {
@@ -11,6 +12,7 @@ function header()
                 <li><a href="/">Pharmacy</a></li>
                 <li><a href="/about">Consultation</a></li>
                 <li>Lab Test</li>
+                <li>About Us</li>
             </ul>
             </nav>
             <h2>
