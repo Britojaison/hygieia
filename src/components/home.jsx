@@ -28,7 +28,7 @@ Vestibulum eget lorem id nunc facilisis auctor at et felis. Aliquam erat volutpa
 Donec at eros eleifend, blandit metus eu, dictum nulla. Maecenas nec rutrum tortor. Vivamus ultricies, erat eu fermentum euismod, eros quam porta arcu, nec rhoncus metus dolor in libero. Quisque sagittis ex in justo varius, quis aliquam nisi mattis. Pellentesque vel eros molestie, dignissim ex id, ultricies ante. Morbi ornare vestibulum ante ut tempor. Nullam arcu magna, dapibus feugiat purus vel, suscipit tristique odio. Nulla facilisi. Vivamus porttitor scelerisque iaculis. Mauris scelerisque hendrerit blandit. Duis iaculis urna in lacus fermentum, at rutrum neque venenatis. In fringilla elementum quam quis suscipit. Etiam facilisis lacus orci, et malesuada neque laoreet vel. Integer mollis dictum felis sed lobortis. Integer nibh mi, ultrices eget turpis ut, faucibus bibendum turpis. Phasellus scelerisque rhoncus molestie.
 </div>   
 
-<div class="aboutus" id="aboutus1">
+<div class="aboutus" id="aboutus1" >
 ABOUT US
                
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem lorem, scelerisque eu eros in, cursus faucibus massa. Sed at sollicitudin dolor, non convallis ex. Etiam ac dui eget lectus scelerisque varius. Aenean et neque ante. Pellentesque viverra justo vel diam tincidunt tincidunt. Curabitur et tincidunt metus, in condimentum tortor. Cras ornare nec lectus ullamcorper tempus. Quisque faucibus eros id commodo convallis. Sed malesuada in diam nec mattis. Suspendisse potenti. Etiam accumsan nulla in tortor placerat, ut fringilla tortor congue. Praesent nec felis nec orci vestibulum hendrerit. Sed congue pretium massa, id fermentum dui viverra eu. Nunc in urna et nunc fringilla convallis ut vel odio.
