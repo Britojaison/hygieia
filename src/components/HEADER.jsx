@@ -11,8 +11,8 @@ function header()
             <ul className="options">
                 <li><a href="/">Pharmacy</a></li>
                 <li><a href="/about">Consultation</a></li>
-                <li>Lab Test</li>
-                <li>About Us</li>
+                <li><a href="/">Lab Test</a></li>
+                <li><a href="#aboutus1">About us</a></li>
             </ul>
             </nav>
             <h2>
