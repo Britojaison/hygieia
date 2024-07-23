@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.png"
+import bg from "../assets/image.png"
 
 function header()
 {
