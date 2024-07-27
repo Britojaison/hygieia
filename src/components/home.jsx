@@ -1,46 +1,38 @@
+import Pharmacy from "../assets/pharmacy-icon.png"
+import notepad from "../assets/notepad.png"
+import hospital from "../assets/hospital.png"
+import video from "../assets/video.png"
+import labtests from "../assets/labtests.png"
 function home(){
     return (
-        <div>
-            <div class="homepage" id="home1"> 
-            HOME
-            </div>
-           
-<div class="options" id="options1">     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem lorem, scelerisque eu eros in, cursus faucibus massa. Sed at sollicitudin dolor, non convallis ex. Etiam ac dui eget lectus scelerisque varius. Aenean et neque ante. Pellentesque viverra justo vel diam tincidunt tincidunt. Curabitur et tincidunt metus, in condimentum tortor. Cras ornare nec lectus ullamcorper tempus. Quisque faucibus eros id commodo convallis. Sed malesuada in diam nec mattis. Suspendisse potenti. Etiam accumsan nulla in tortor placerat, ut fringilla tortor congue. Praesent nec felis nec orci vestibulum hendrerit. Sed congue pretium massa, id fermentum dui viverra eu. Nunc in urna et nunc fringilla convallis ut vel odio.
-
-Integer lectus mi, vehicula non fermentum non, rhoncus sit amet felis. Fusce blandit ex ut lorem pulvinar vestibulum. Suspendisse ex ipsum, ultrices quis ligula non, efficitur viverra metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sed sem lacinia, tempor erat et, hendrerit sapien. Praesent eleifend dictum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit enim, lacinia viverra sollicitudin id, sodales sit amet justo. Integer purus turpis, maximus a cursus vel, tincidunt sed ex. Cras a commodo metus, sit amet consequat sapien. Nam quis facilisis massa.
-
-Suspendisse at ultricies sapien. Aenean aliquam fringilla ligula eget ultricies. Proin vestibulum dui nec faucibus gravida. Vivamus gravida turpis nisi, quis iaculis massa cursus sit amet. Quisque eget tempor odio, id ullamcorper lacus. Ut vel eleifend nulla, viverra fermentum eros. Sed auctor, ipsum et imperdiet pellentesque, neque est imperdiet ipsum, eget varius elit purus at quam. In porttitor, tellus sit amet sagittis ultricies, augue sem sagittis dui, ut dapibus lectus sapien ut lectus. Praesent ornare neque sit amet luctus placerat.
-
-Vestibulum eget lorem id nunc facilisis auctor at et felis. Aliquam erat volutpat. Aenean lacinia ex et elit blandit porta. Praesent sit amet dignissim nisi. Maecenas sagittis vitae dui quis consequat. Nam interdum malesuada condimentum. Donec ac libero non purus imperdiet gravida id sed massa. Nulla nibh tellus, varius vel facilisis eget, condimentum vel augue. Fusce sed luctus odio. Aenean rutrum pharetra egestas.
-
-Donec at eros eleifend, blandit metus eu, dictum nulla. Maecenas nec rutrum tortor. Vivamus ultricies, erat eu fermentum euismod, eros quam porta arcu, nec rhoncus metus dolor in libero. Quisque sagittis ex in justo varius, quis aliquam nisi mattis. Pellentesque vel eros molestie, dignissim ex id, ultricies ante. Morbi ornare vestibulum ante ut tempor. Nullam arcu magna, dapibus feugiat purus vel, suscipit tristique odio. Nulla facilisi. Vivamus porttitor scelerisque iaculis. Mauris scelerisque hendrerit blandit. Duis iaculis urna in lacus fermentum, at rutrum neque venenatis. In fringilla elementum quam quis suscipit. Etiam facilisis lacus orci, et malesuada neque laoreet vel. Integer mollis dictum felis sed lobortis. Integer nibh mi, ultrices eget turpis ut, faucibus bibendum turpis. Phasellus scelerisque rhoncus molestie.
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem lorem, scelerisque eu eros in, cursus faucibus massa. Sed at sollicitudin dolor, non convallis ex. Etiam ac dui eget lectus scelerisque varius. Aenean et neque ante. Pellentesque viverra justo vel diam tincidunt tincidunt. Curabitur et tincidunt metus, in condimentum tortor. Cras ornare nec lectus ullamcorper tempus. Quisque faucibus eros id commodo convallis. Sed malesuada in diam nec mattis. Suspendisse potenti. Etiam accumsan nulla in tortor placerat, ut fringilla tortor congue. Praesent nec felis nec orci vestibulum hendrerit. Sed congue pretium massa, id fermentum dui viverra eu. Nunc in urna et nunc fringilla convallis ut vel odio.
-
-Integer lectus mi, vehicula non fermentum non, rhoncus sit amet felis. Fusce blandit ex ut lorem pulvinar vestibulum. Suspendisse ex ipsum, ultrices quis ligula non, efficitur viverra metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sed sem lacinia, tempor erat et, hendrerit sapien. Praesent eleifend dictum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit enim, lacinia viverra sollicitudin id, sodales sit amet justo. Integer purus turpis, maximus a cursus vel, tincidunt sed ex. Cras a commodo metus, sit amet consequat sapien. Nam quis facilisis massa.
-
-Suspendisse at ultricies sapien. Aenean aliquam fringilla ligula eget ultricies. Proin vestibulum dui nec faucibus gravida. Vivamus gravida turpis nisi, quis iaculis massa cursus sit amet. Quisque eget tempor odio, id ullamcorper lacus. Ut vel eleifend nulla, viverra fermentum eros. Sed auctor, ipsum et imperdiet pellentesque, neque est imperdiet ipsum, eget varius elit purus at quam. In porttitor, tellus sit amet sagittis ultricies, augue sem sagittis dui, ut dapibus lectus sapien ut lectus. Praesent ornare neque sit amet luctus placerat.
-
-Vestibulum eget lorem id nunc facilisis auctor at et felis. Aliquam erat volutpat. Aenean lacinia ex et elit blandit porta. Praesent sit amet dignissim nisi. Maecenas sagittis vitae dui quis consequat. Nam interdum malesuada condimentum. Donec ac libero non purus imperdiet gravida id sed massa. Nulla nibh tellus, varius vel facilisis eget, condimentum vel augue. Fusce sed luctus odio. Aenean rutrum pharetra egestas.
-
-Donec at eros eleifend, blandit metus eu, dictum nulla. Maecenas nec rutrum tortor. Vivamus ultricies, erat eu fermentum euismod, eros quam porta arcu, nec rhoncus metus dolor in libero. Quisque sagittis ex in justo varius, quis aliquam nisi mattis. Pellentesque vel eros molestie, dignissim ex id, ultricies ante. Morbi ornare vestibulum ante ut tempor. Nullam arcu magna, dapibus feugiat purus vel, suscipit tristique odio. Nulla facilisi. Vivamus porttitor scelerisque iaculis. Mauris scelerisque hendrerit blandit. Duis iaculis urna in lacus fermentum, at rutrum neque venenatis. In fringilla elementum quam quis suscipit. Etiam facilisis lacus orci, et malesuada neque laoreet vel. Integer mollis dictum felis sed lobortis. Integer nibh mi, ultrices eget turpis ut, faucibus bibendum turpis. Phasellus scelerisque rhoncus molestie.
-</div>   
-
-<div class="aboutus" id="aboutus1" >
-ABOUT US
-               
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem lorem, scelerisque eu eros in, cursus faucibus massa. Sed at sollicitudin dolor, non convallis ex. Etiam ac dui eget lectus scelerisque varius. Aenean et neque ante. Pellentesque viverra justo vel diam tincidunt tincidunt. Curabitur et tincidunt metus, in condimentum tortor. Cras ornare nec lectus ullamcorper tempus. Quisque faucibus eros id commodo convallis. Sed malesuada in diam nec mattis. Suspendisse potenti. Etiam accumsan nulla in tortor placerat, ut fringilla tortor congue. Praesent nec felis nec orci vestibulum hendrerit. Sed congue pretium massa, id fermentum dui viverra eu. Nunc in urna et nunc fringilla convallis ut vel odio.
-
-Integer lectus mi, vehicula non fermentum non, rhoncus sit amet felis. Fusce blandit ex ut lorem pulvinar vestibulum. Suspendisse ex ipsum, ultrices quis ligula non, efficitur viverra metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sed sem lacinia, tempor erat et, hendrerit sapien. Praesent eleifend dictum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit enim, lacinia viverra sollicitudin id, sodales sit amet justo. Integer purus turpis, maximus a cursus vel, tincidunt sed ex. Cras a commodo metus, sit amet consequat sapien. Nam quis facilisis massa.
-
-Suspendisse at ultricies sapien. Aenean aliquam fringilla ligula eget ultricies. Proin vestibulum dui nec faucibus gravida. Vivamus gravida turpis nisi, quis iaculis massa cursus sit amet. Quisque eget tempor odio, id ullamcorper lacus. Ut vel eleifend nulla, viverra fermentum eros. Sed auctor, ipsum et imperdiet pellentesque, neque est imperdiet ipsum, eget varius elit purus at quam. In porttitor, tellus sit amet sagittis ultricies, augue sem sagittis dui, ut dapibus lectus sapien ut lectus. Praesent ornare neque sit amet luctus placerat.
-
-Vestibulum eget lorem id nunc facilisis auctor at et felis. Aliquam erat volutpat. Aenean lacinia ex et elit blandit porta. Praesent sit amet dignissim nisi. Maecenas sagittis vitae dui quis consequat. Nam interdum malesuada condimentum. Donec ac libero non purus imperdiet gravida id sed massa. Nulla nibh tellus, varius vel facilisis eget, condimentum vel augue. Fusce sed luctus odio. Aenean rutrum pharetra egestas.
-
-Donec at eros eleifend, blandit metus eu, dictum nulla. Maecenas nec rutrum tortor. Vivamus ultricies, erat eu fermentum euismod, eros quam porta arcu, nec rhoncus metus dolor in libero. Quisque sagittis ex in justo varius, quis aliquam nisi mattis. Pellentesque vel eros molestie, dignissim ex id, ultricies ante. Morbi ornare vestibulum ante ut tempor. Nullam arcu magna, dapibus feugiat purus vel, suscipit tristique odio. Nulla facilisi. Vivamus porttitor scelerisque iaculis. Mauris scelerisque hendrerit blandit. Duis iaculis urna in lacus fermentum, at rutrum neque venenatis. In fringilla elementum quam quis suscipit. Etiam facilisis lacus orci, et malesuada neque laoreet vel. Integer mollis dictum felis sed lobortis. Integer nibh mi, ultrices eget turpis ut, faucibus bibendum turpis. Phasellus scelerisque rhoncus molestie.
-</div>
+        <div>      
+            <div className="container">
+        <a href="#" className="button button-1">
+        <img className="pharm" src={Pharmacy} alt="pharmacy"></img>
+            <div>Pharmacy Near Me</div>
+            <div>FIND STORE</div>
+        </a>
+        <a href="#" className="button button-2">
+        <img className="notepad" src={notepad} alt="notepad"></img>
+            <div>Get 15% off on Medicines</div>
+            <div>UPLOAD NOW</div>
+        </a>
+        <a href="#" className="button button-3">
+        <img className="hospital" src={hospital} alt="hospital"></img>
+            <div>Hospital Visit</div>
+            <div>PRE-BOOK</div>
+        </a>
+        <a href="#" className="button button-4">
+        <img className="video" src={video} alt="video"></img>
+            <div>Video Consult</div>
+            <div>IN 15 MIN</div>
+        </a>
+        <a href="#" className="button button-5">
+        <img className="labtests" src={labtests} alt="labtests"></img>
+            <div>Lab Tests</div>
+            <div>AT HOME</div>
+        </a>
+    </div> 
         </div>
     )
 }
