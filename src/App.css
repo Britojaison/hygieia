@@ -27,16 +27,18 @@ body {
 }
 
 .options {
+  
   margin: 0;
   display: flex;
   list-style-type: none;
-  gap: 3rem;
+  gap: 5rem;
   justify-content: center;
-  font-size: large;
+  font-size: larger;
   font-weight: 700;
-  border: solid 1px;
-  box-shadow: 10px 5px 5px rgb(88, 86, 86);
-  padding: 1rem;
+  /* border: solid 1px; */
+  /* box-shadow: 10px 5px 5px rgb(88, 86, 86); */
+  padding: 0.5rem;
+  padding-top:1.5rem;
   
   li {
     
