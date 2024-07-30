@@ -8,7 +8,7 @@ function header()
            
             <nav>
             <ul className="options">
-                <li><a href="/">Pharmacy</a></li>
+                <li><a href="/pharmacy.jsx">Pharmacy</a></li>
                 <li><a href="/about">Consultation</a></li>
                 <li><a href="/">Lab Test</a></li>
                 <li><a href="#aboutus1">About us</a></li>
