@@ -1,7 +1,4 @@
 import Logo from "../assets/logo.png"
-import bg from "../assets/image.png"
-import Pharmacy from "./pharmacy";
-import { Link } from "react-router-dom";
 
 function header()
 {
