@@ -121,7 +121,7 @@ body {
 .carousel-container {
   max-width: 100%;  
   margin:auto;
-  border-radius: 100px;  
+  border-radius: 80px;  
   overflow: hidden;  
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
 }
