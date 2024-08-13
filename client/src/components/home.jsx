@@ -4,6 +4,7 @@ import hospital from "../assets/hospital.png"
 import video from "../assets/video.png"
 import labtests from "../assets/labtests.png"
 import ImageCarousel from '../components/Carousel.jsx'
+import vitamin from "../assets/vitaminb12.jpg"
 function home(){
     return (
         <div>      
@@ -35,6 +36,42 @@ function home(){
         </a>
     </div> 
     <ImageCarousel/>
+    <div className="title"> 
+        <h2>VITAMINS</h2>
+    </div>
+    <div className="product-container">
+                {/* Product Cards */}
+                <div className="product-card">
+                    <img src={vitamin} alt="Vitamin b12" />
+                    <div>Vitamin B12</div>
+                    <div>Rs. 1000</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div className="product-card">
+                    <img src={vitamin} alt="Vitamin b12" />
+                    <div>Vitamin B12</div>
+                    <div>Rs. 1000</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div className="product-card">
+                    <img src={vitamin} alt="Vitamin b12" />
+                    <div>Vitamin B12</div>
+                    <div>Rs. 1000</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div className="product-card">
+                    <img src={vitamin} alt="Vitamin b12" />
+                    <div>Vitamin B12</div>
+                    <div>Rs. 1000</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div className="product-card">
+                    <img src={vitamin} alt="Vitamin b12" />
+                    <div>Vitamin B12</div>
+                    <div>Rs. 1000</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
         </div>
         
     )
