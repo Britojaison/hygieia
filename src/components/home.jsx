@@ -3,6 +3,7 @@ import notepad from "../assets/notepad.png"
 import hospital from "../assets/hospital.png"
 import video from "../assets/video.png"
 import labtests from "../assets/labtests.png"
+import ImageCarousel from '../components/Carousel.jsx'
 function home(){
     return (
         <div>      
@@ -33,7 +34,9 @@ function home(){
             <div>AT HOME</div>
         </a>
     </div> 
+    <ImageCarousel/>
         </div>
+        
     )
 }
 export default home 
