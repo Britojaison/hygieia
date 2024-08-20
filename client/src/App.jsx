@@ -1,22 +1,17 @@
-import Nav from "./components/nav"
 import './App.css'
-import Header from "./components/HEADER"
-import Home from "./Pages/Home"
+import Home from "./Pages/home"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-
 
 function App(){
   return (
     <>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-    </BrowserRouter>
-    
-  
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      </BrowserRouter>
     </>
   );
 }
 
-export default App
+export default App;
