@@ -5,6 +5,8 @@ import video from "../assets/video.png"
 import labtests from "../assets/labtests.png"
 import ImageCarousel from '../components/Carousel.jsx'
 import vitamin from "../assets/vitaminb12.jpg"
+import { Link } from "react-router-dom"
+
 function home(){
     return (
         <div>      
