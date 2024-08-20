@@ -5,6 +5,8 @@ import video from "../assets/video.png"
 import labtests from "../assets/labtests.png"
 import ImageCarousel from './Carousel.jsx'
 import vitamin from "../assets/vitaminb12.jpg"
+import dolo from "../assets/dolo.png"
+import syrup from "../assets/coughsyrup.png"
 function mainpage(){
     return (
         <div>      
@@ -37,7 +39,7 @@ function mainpage(){
     </div> 
     <ImageCarousel/>
     <div className="title"> 
-        <h2>VITAMINS</h2>
+        <h2>PHARMACY</h2>
     </div>
     <div className="product-container">
                 {/* Product Cards */}
@@ -48,9 +50,15 @@ function mainpage(){
                     <button>Add to Cart</button>
                 </div>
                 <div className="product-card">
-                    <img src={vitamin} alt="Vitamin b12" />
-                    <div>Vitamin B12</div>
-                    <div>Rs. 1000</div>
+                    <img src={dolo} alt="dolo" />
+                    <div>Dolo-650 - Strip of 15 Tablets</div>
+                    <div>Rs. 28</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div className="product-card">
+                    <img src={syrup} alt="cough syrup" />
+                    <div>Charak Pharma Cough Syrup </div>
+                    <div>Rs. 210</div>
                     <button>Add to Cart</button>
                 </div>
                 <div className="product-card">
@@ -65,12 +73,7 @@ function mainpage(){
                     <div>Rs. 1000</div>
                     <button>Add to Cart</button>
                 </div>
-                <div className="product-card">
-                    <img src={vitamin} alt="Vitamin b12" />
-                    <div>Vitamin B12</div>
-                    <div>Rs. 1000</div>
-                    <button>Add to Cart</button>
-                </div>
+             
             </div>
         </div>
         
