@@ -8,9 +8,9 @@ function header()
                 <img className="logo" src={Logo} alt="logo"></img>
                 <ul className="options">
                     <li>Pharmacy</li>
-                    <li><a href="/about">Consultation</a></li>
+                    <li><a href="/">Consultation</a></li>
                     <li><a href="/">Lab Test</a></li>
-                    <li><a href="#aboutus1">About us</a></li>
+                    <li><a href="/">About us</a></li>
                 </ul>
                 <h2>
                     Profile
