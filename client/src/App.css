@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  background-color: #a4cfc0;
+  background-color: #D6EFD8;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -135,20 +135,20 @@ body {
   transition: transform 0.4s ease-in-out;  
 }
 .title{
-  text-align: center; /* Centers horizontally */
-  line-height: 100px; /* Set the same as container height */
+  text-align: center; 
+  line-height: 100px; 
   height: 100px;  
 }
 .product-container {
     display: flex;
-    flex-wrap: wrap; /* Ensures items wrap to the next line */
-    justify-content: space-around; /* Distributes space evenly */
-    margin-bottom: 20px; /* Adds space between the product container and the footer */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-bottom: 20px; 
 }
 
 .product-card {
-    flex: 1 1 200px; /* Each product card takes up at least 200px and can grow */
-    margin: 10px; /* Space between the product cards */
+    flex: 1 1 200px; 
+    margin: 10px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -171,21 +171,21 @@ body {
   cursor: pointer;
 }
 .footer {
-  background-color: #a4d3b4; /* Adjusted color to match the image */
-  padding: 20px 0; /* Reduced padding to make the footer smaller */
+  background: linear-gradient(to bottom, #D6EFD8, #508D4E 75%);
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  margin-top: 20px; /* Adds space between the footer and the products */
+  margin-top: 20px; 
 }
 
 .footer-top {
-  margin-bottom: 15px; /* Reduced margin-bottom to make the footer more compact */
+  margin-bottom: 15px;
 }
 
 .footer-logo {
-  width: 80px; /* Adjusted size for the logo */
+  width: 80px; 
   height: auto;
 }
 
@@ -193,7 +193,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  max-width: 1000px; /* Adjusted max-width to fit smaller screens better */
+  max-width: 1000px; 
 }
 
 .footer-section {
@@ -202,21 +202,21 @@ body {
 }
 
 .footer-section h4 {
-  font-size: 14px; /* Reduced font size */
+  font-size: 14px; 
   margin-bottom: 10px;
   color: #666;
 }
 
 .footer-section p {
-  font-size: 12px; /* Reduced font size */
+  font-size: 12px;
   line-height: 1.4;
   margin: 4px 0;
-  color: #333;
+  color: #000;
 }
 
 .footer-section a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   transition: color 0.3s;
 }
 
@@ -226,8 +226,8 @@ body {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 10px; /* Reduced margin to make the footer smaller */
+  margin-top: 10px; 
   font-size: 12px;
-  color: #999;
+  color: #000;
 }
 
