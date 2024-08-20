@@ -3,9 +3,9 @@ import notepad from "../assets/notepad.png"
 import hospital from "../assets/hospital.png"
 import video from "../assets/video.png"
 import labtests from "../assets/labtests.png"
-import ImageCarousel from '../components/Carousel.jsx'
+import ImageCarousel from './Carousel.jsx'
 import vitamin from "../assets/vitaminb12.jpg"
-function home(){
+function mainpage(){
     return (
         <div>      
             <div className="container">
@@ -76,4 +76,4 @@ function home(){
         
     )
 }
-export default home 
+export default mainpage 
