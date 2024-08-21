@@ -296,7 +296,7 @@ html {
     background: linear-gradient(to bottom right, #a4e1ff, #63cdda);
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
 .carousel-item img {
