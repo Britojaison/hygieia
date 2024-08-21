@@ -171,7 +171,7 @@ html {
     cursor: pointer;
   }
   .footer {
-    background: linear-gradient(to bottom, #F4F4F4, #D6EFD8 85%);
+    background: linear-gradient(to bottom, #F4F4F4, #80AF81 100%);
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -320,7 +320,7 @@ html {
     font-size: 36px;
     color: #ff7a18;
     margin: 20px 0;
-    background: -webkit-linear-gradient(left, #80AF81, #508D4E 75%);
+    background: -webkit-linear-gradient(left, #80AF81, #80AF81 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
