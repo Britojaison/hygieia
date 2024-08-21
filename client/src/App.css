@@ -171,7 +171,7 @@ body {
   cursor: pointer;
 }
 .footer {
-  background: linear-gradient(to bottom, #D6EFD8, #508D4E 75%);
+  background:0 4px 8px rgb(214, 239, 216);
   padding: 20px 0;
   display: flex;
   flex-direction: column;
