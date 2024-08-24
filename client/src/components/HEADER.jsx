@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 function header()
 {
@@ -14,7 +15,7 @@ function header()
                     <li><a href="#aboutus1">About us</a></li>
                 </ul>
                 <h2>
-                    Profile
+                    <Link to="/login">Login</Link>
                 </h2>
             </div>
     )

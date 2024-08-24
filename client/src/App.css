@@ -27,7 +27,6 @@ body {
 }
 
 .options {
-  
   margin: 0;
   display: flex;
   list-style-type: none;
@@ -38,10 +37,9 @@ body {
   /* border: solid 1px; */
   /* box-shadow: 10px 5px 5px rgb(88, 86, 86); */
   padding: 0.5rem;
-  padding-top:1.5rem;
-  
+  padding-top: 1.5rem;
+
   li {
-    
     a {
       color: black;
       text-decoration: none;
@@ -108,36 +106,36 @@ body {
 }
 
 .button-3 {
-  background-color: #73AD83;
+  background-color: #73ad83;
 }
 
 .button-4 {
-  background-color: #58977F;
+  background-color: #58977f;
 }
 
 .button-5 {
-  background-color: #83BB83;
+  background-color: #83bb83;
 }
 .carousel-container {
-  max-width: 100%;  
-  margin:auto;
-  border-radius: 60px;  
-  overflow: hidden;  
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+  max-width: 100%;
+  margin: auto;
+  border-radius: 60px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-image {
   width: 100%;
-  height: 200px;  
-  object-fit: cover; 
-  border-radius: 20px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.4s ease-in-out;  
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
 }
-.title{
+.title {
   text-align: center; /* Centers horizontally */
   line-height: 100px; /* Set the same as container height */
-  height: 100px;  
+  height: 100px;
 }
 .product-container {
   display: flex;
@@ -161,9 +159,11 @@ body {
 .product-card button {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+/* login page */
+
