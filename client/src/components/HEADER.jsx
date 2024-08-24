@@ -1,5 +1,6 @@
 import Logo from "../assets/logo.png"
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 function header()
 {
     return (
@@ -13,7 +14,7 @@ function header()
                     <li><a href="/">About us</a></li>
                 </ul>
                 <h2>
-                    Profile
+                    <Link to="/login">Login</Link>
                 </h2>
             </div>
     )
