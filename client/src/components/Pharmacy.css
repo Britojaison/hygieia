@@ -53,6 +53,7 @@ nav ul li {
     left: 50%; 
     transform: translateX(-50%);
     z-index: 0; 
+    top: 1.2rem;
     bottom: 270px; 
 }
 

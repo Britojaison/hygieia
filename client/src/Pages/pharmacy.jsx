@@ -32,8 +32,8 @@ function Pharmacy() {
                     <div key={product.id} className="product-card">
                         <img src={product.imgSrc} alt={product.imgAlt} />
                         <p>{product.name}</p>
+                        <p>Price: {product.price}</p>
                         <button className="add-to-cart">Add to Cart</button>
-                        <p className="price">Rs. {product.price}</p>
                     </div>
                 ))}
             </section>
