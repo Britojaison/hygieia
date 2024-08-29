@@ -43,8 +43,12 @@ nav ul li {
 }
 
 .title_pharm {
-    font-size: 200px;
+    font-size: 150px; /* Reduced the font size for better alignment */
     font-weight: 700;
+    color: rgb(22, 21, 21);
+    z-index: 1;
+    position: relative; /* Ensures it stays above the image */
+    text-align: center; /* Centers the text horizontally */
 }
 
 .pharmacy-banner img {
@@ -53,8 +57,7 @@ nav ul li {
     left: 50%; 
     transform: translateX(-50%);
     z-index: 0; 
-    top: 1.2rem;
-    bottom: 270px; 
+    bottom: 100; /* Adjust the image position relative to the bottom */
 }
 
 .categories {
