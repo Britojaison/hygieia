@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 function Home(){
     return(
         <>
-        <Header />
+        <Header isLoggedIn={false} />
         <Mainpage />
         <Footer />
         </>

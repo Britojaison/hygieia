@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Pharmacy.css'; // Make sure this path matches your project structure
+import '../assets/styles/Pharmacy.css'; // Make sure this path matches your project structure
 import Header from '../components/HEADER';
 import Footer from '../components/footer';
 import Pills from '../assets/pills.png';
@@ -32,8 +32,8 @@ function Pharmacy() {
                     <div key={product.id} className="product-card">
                         <img src={product.imgSrc} alt={product.imgAlt} />
                         <p>{product.name}</p>
+                        <p>Price: {product.price}</p>
                         <button className="add-to-cart">Add to Cart</button>
-                        <p className="price">Rs. {product.price}</p>
                     </div>
                 ))}
             </section>
