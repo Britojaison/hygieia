@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import "../assets/styles/login.css"
 import axios from "axios"
+import { useNavigate,Link } from "react-router-dom";
+
 
 function App() {
+    const history= useNavigate()
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSubmit = (e) => {
+    async function handleSubmit (e) {
         e.preventDefault();
         // Implement login logic here
-        axios.post('http://localhost:5000/login',{username,password})
-        .then(res=>console.log(res))
+        await axios.post('http://localhost:5000/login',{username,password})
+        .then(res=>{
+            history("/")
+        })
         .catch(res=>console.log(err));
         
     };
