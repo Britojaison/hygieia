@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Pharmacy.css'; // Make sure this path matches your project structure
+import '../assets/styles/Pharmacy.css'; // Make sure this path matches your project structure
 import Header from '../components/HEADER';
 import Footer from '../components/footer';
 import Pills from '../assets/pills.png';

@@ -10,7 +10,7 @@ import syrup from "../assets/coughsyrup.png";
 import thiamin from "../assets/Thiamin.png";
 import collagen from "../assets/collagen.png";
 import ImageCarousel from './Carousel.jsx';
-import "./MainPage.css";
+import "../assets/styles/MainPage.css";
 
 // Array of buttons with their corresponding data
 const buttonsData = [
