@@ -21,7 +21,9 @@ function Header({ isLoggedIn }) {
                     <Link to="/profile"><img style={{width:'2.6rem'}} src={Userimg} alt='user' /></Link>
                 ) : (
                     <Link to="/login">Login</Link>
+                    
                 )}
+                
             </h2>
         </div>
     );

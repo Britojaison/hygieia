@@ -1,12 +1,9 @@
 import React from 'react'
-import "../assets/styles/login.css";
+import "../assets/styles/signup.css";
 import { FaUser,FaLock } from "react-icons/fa";
-
-
 
 export const login = () => {
   return (
-    <div className='body'>
     <div className='wrapper'>
         <form action=''>
             <h1>Login</h1>
@@ -31,7 +28,6 @@ export const login = () => {
             </div>
         </form>
 
-    </div>
     </div>
   )
 }
