@@ -1,7 +1,7 @@
 import React from 'react'
 import "../assets/styles/login.css";
 import { FaUser,FaLock } from "react-icons/fa";
-
+import { Link } from 'react-router-dom';
 
 function login(){
     
@@ -27,7 +27,7 @@ function login(){
             <button type='submit'>Login</button>
 
             <div className="register-link">
-                <p>Dont have an account?<a href='#'>Register</a></p>
+                <p>Dont have an account?<Link className='signup' to="/signup">Register</Link></p>
             </div>
         </form>
 
