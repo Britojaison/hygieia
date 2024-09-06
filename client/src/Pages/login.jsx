@@ -3,8 +3,8 @@ import "../assets/styles/login.css";
 import { FaUser,FaLock,FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-
-export const login = () => {
+function login(){
+    
   return (
     <div className='body'>
     <div className='wrapper'>
