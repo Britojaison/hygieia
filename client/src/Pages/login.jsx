@@ -1,6 +1,6 @@
 import React from 'react'
 import "../assets/styles/login.css";
-import { FaUser,FaLock } from "react-icons/fa";
+import { FaUser,FaLock,FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
@@ -8,6 +8,9 @@ export const login = () => {
   return (
     <div className='body'>
     <div className='wrapper'>
+    <Link to="/" className="back-arrow">
+        <FaArrowLeft /> 
+    </Link>
         <form action=''>
             <h1>Login</h1>
             <div className="input-box">
