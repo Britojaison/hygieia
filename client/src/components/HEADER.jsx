@@ -12,7 +12,7 @@ function Header({ isLoggedIn }) {
             </Link>
             <ul className="options">
                 <li><Link to="/">Pharmacy</Link></li>
-                <li><a href="/">Consultation</a></li>
+                <li><Link to="/consult">Consultation</Link></li>
                 <li><a href="/">Lab Test</a></li>
                 <li><a href="/">About us</a></li>
             </ul>

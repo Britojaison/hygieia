@@ -5,6 +5,7 @@ import Pharmacy from './Pages/pharmacy'
 import Login from './Pages/login'
 import Profile from './Pages/profile';
 import Signup from "./Pages/signup";
+import Consultation from './Pages/consult';
 function App(){
   return (
     <>
@@ -15,6 +16,7 @@ function App(){
         <Route path='/login' element={<Login />}/>
         <Route path='/profile' element={<Profile/>} />
         <Route path='/signup' element={<Signup/>} />
+        <Route path='/consult' element={<Consultation />}/>
       </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,313 @@
+body{
+    background: none; 
+    margin: 0;
+    padding: 0;
+  }
+  .consultation-page {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #ffff;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .navbar ul li {
+      cursor: pointer;
+    }
+    
+    .search-input {
+      padding: 5px;
+      border-radius: 4px;
+      border: none;
+    }
+    
+    .profile-btn {
+      background-color: #9db29f;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .consult-banner {
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #85a27d; 
+  }
+  
+  .consult-banner h1 {
+      color: black;
+      z-index: 1;
+  }
+  .consult-banner :hover{
+    color: #fff;
+  }
+  
+  .title_consult {
+      color:black;
+      font-size: 200px;
+      font-weight: 700;
+  }
+  
+  .consult-banner img {
+      width: 300px; 
+      position: absolute;
+      left: 50%; 
+      transform: translateX(-50%);
+      z-index: 0;
+      bottom: 380px;
+  }
+  
+    
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #ffff;
+    }
+    
+    .find-doctors {
+      width: 50%;
+      background-color: #ffff;
+      padding: 20px;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgb(214, 239, 216);
+    }
+    
+    .find-doctors h2 {  
+      margin-bottom: 15px;
+    }
+    
+    .dropdown-btn {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    
+    .search-bar {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .appointment-section {
+      background-color: #FFFF;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .input-field {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 50px;
+      border: 1px solid #ccc;
+    }
+    
+    .submit-btn {
+      align-items: center;
+      appearance: none;
+      background-color: #ffff;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 24px;
+      border-style: none;
+      box-shadow: 0 4px 8px rgb(214, 239, 216);
+      box-sizing: border-box;
+      cursor: pointer;
+      margin-bottom: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      fill: currentcolor;
+      font-size: 14px;
+      font-weight: 500;
+      height: 48px;
+      justify-content: center;
+      letter-spacing: .25px;
+      line-height: normal;
+      max-width: 100%;
+      overflow: visible;
+      padding: 2px 24px;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: auto;
+      will-change: transform,opacity;
+      z-index: 0;
+    }
+    
+    .submit-btn:hover {
+      background-color: #88b578;
+      color: #fff;
+    }
+    
+    @media (min-width: 768px) {
+      .submit-btn{
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+      }
+    }
+    .consultation-info {
+      width: 50%;
+      background-color: #ffff;
+      padding: 20px;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgb(214, 239, 216);
+      width: 40%;
+    }
+    
+    .contact-btn {
+    align-items: center;
+    appearance: none;
+    background-color: #ffff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: 0 4px 8px rgb(214, 239, 216);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  .contact-btn:hover {
+      background-color: #88b578;
+      color: #fff;
+    }
+    
+    
+    
+   /* Styles for the toggle buttons */
+   .toggle-buttons {
+    display: flex;
+    background-color: #88b578; /* The color of the button background */
+    border-radius: 30px;
+    overflow: hidden;
+    width: 200px; /* Adjust width based on your preference */
+    box-shadow: 0 4px 8px rgb(214, 239, 216);
+    width: 100%;
+  }
+  
+  .toggle-btn {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    color: black; /* Set the default text color to black */
+    transition: 0.3s;
+  }
+  
+  .toggle-btn.active {
+    background: #ffff;
+    color: black; /* Change text color when active */
+  }
+  
+  .toggle-btn:hover {
+    background: #88b578;
+    color: white; /* Change text color on hover */
+  }
+  
+  /* Styling for steps list */
+  .steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .steps-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .steps-list li img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffff;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow:0 4px 8px rgb(214, 239, 216);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown-btn li:hover{
+    background-color: #85a27d;
+  }
+  .dropdown-menu li {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #85a27d;
+  }
+  
+  .dropdown-btn:focus {
+    outline: none;
+  }
+  
