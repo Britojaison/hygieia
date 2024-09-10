@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from "../assets/logo.png";
-import Userimg from "../assets/user.svg"
+import Logo from "../assets/imgs/logo.png";
+import Userimg from "../assets/imgs/user.svg"
 import { Link } from "react-router-dom";
 
 function Header({ isLoggedIn }) {

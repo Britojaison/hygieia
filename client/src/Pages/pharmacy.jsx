@@ -2,11 +2,11 @@ import React from 'react';
 import '../assets/styles/Pharmacy.css'; 
 import Header from '../components/HEADER';
 import Footer from '../components/footer';
-import Pills from '../assets/pills.png';
-import Thiamin from "../assets/Thiamin.png";
-import vitamin from "../assets/vitaminb12.jpg";
-import syrup from "../assets/coughsyrup.png";
-import collagen from "../assets/collagen.png";
+import Pills from '../assets/imgs/pills.png';
+import Thiamin from "../assets/imgs/Thiamin.png";
+import vitamin from "../assets/imgs/vitaminb12.jpg";
+import syrup from "../assets/imgs/coughsyrup.png";
+import collagen from "../assets/imgs/collagen.png";
 
 function Pharmacy() {
     const productsData = [

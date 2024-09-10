@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Phone, Ship, Calendar, X } from 'lucide-react';
 import './UserProfile.css';
 import Header from '../components/HEADER';
-import Userimg from "../assets/user.svg"
+import Userimg from "../assets/imgs/user.svg"
 
 
 const Card = ({ children, className = '' }) => (
