@@ -20,7 +20,8 @@ app.post('/login', (req, res) => {
         req.body.username,
         req.body.password];
         db.query(sql, values, (err, data) => {
-            if(err || values[0].username==null) return res.json("Login failed");
+            if(err || values[0].username==null) 
+                return res.json("Login failed");
             return res.json(data);
         })
 

@@ -1,10 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../assets/styles/login.css";
 import { FaUser,FaLock,FaArrowLeft, FaPhone } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 function login(){
-    
+    const history= useNavigate()
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    async function handleSubmit (e) {
+        e.preventDefault();
+        // Implement login logic here
+        console.log(username)
+        await axios.post('http://localhost:5000/login',{username,password})
+        .then(res=>{
+            history("/")
+        })
+        .catch(res=>console.log(err));
+        
+    };
   return (
     <div className='body'>
       <div className='wrapper'>

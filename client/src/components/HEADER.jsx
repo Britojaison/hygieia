@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from "../assets/logo.png";
-import Userimg from "../assets/user.svg"
+import Logo from "../assets/imgs/logo.png";
+import Userimg from "../assets/imgs/user.svg"
 import { Link } from "react-router-dom";
 
 function Header({ isLoggedIn }) {
@@ -12,7 +12,7 @@ function Header({ isLoggedIn }) {
             </Link>
             <ul className="options">
                 <li><Link to="/">Pharmacy</Link></li>
-                <li><a href="/">Consultation</a></li>
+                <li><Link to="/consult">Consultation</Link></li>
                 <li><a href="/">Lab Test</a></li>
                 <li><a href="/">About us</a></li>
             </ul>
