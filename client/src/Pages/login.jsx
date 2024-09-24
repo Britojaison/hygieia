@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import "../assets/styles/login.css";
-import { FaUser,FaLock,FaArrowLeft, FaPhone } from "react-icons/fa";
+import { FaLock,FaArrowLeft, FaPhone } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function login(){
