@@ -7,6 +7,7 @@ function Home(){
         <Header isLoggedIn={false} />
         <Mainpage />
         <Footer />
+       
         </>
     )
 }

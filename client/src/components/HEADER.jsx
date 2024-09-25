@@ -11,9 +11,9 @@ function Header({ isLoggedIn }) {
                 <img className="logo" src={Logo} alt="logo" />
             </Link>
             <ul className="options">
-                <li><Link to="/">Pharmacy</Link></li>
+                <li><Link to="/pharm">Pharmacy</Link></li>
                 <li><Link to="/consult">Consultation</Link></li>
-                <li><a href="/">Lab Test</a></li>
+                <li><Link to="/labpage">Lab page</Link></li>
                 <li><a href="/">About us</a></li>
             </ul>
             <h2>
