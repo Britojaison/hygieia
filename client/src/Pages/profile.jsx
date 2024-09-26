@@ -1,112 +1,38 @@
 import React from 'react';
-import { Mail, Phone, Ship, Calendar, X } from 'lucide-react';
-import './UserProfile.css';
-import Header from '../components/HEADER';
-import Userimg from "../assets/imgs/user.svg"
+import '../assets/styles/UserProfile.css';
 
 
-const Card = ({ children, className = '' }) => (
-    <div className={`card ${className}`}>
-        {children}
-    </div>
-);
-
-const UserProfile = () => {
+const ProfilePage = () => {
     return (
-        <div>
-            <Header isLoggedIn={true} />
-            <div className="container">
-
-                <div className="grid">
-
-                    <Card className='main_c flex'>
-                    <img style={{width:'10.6rem'}} src={Userimg} alt='user' />
-                        <div className="space-y-2">
-                            <h2 className="card-title">Personal Information</h2>
-                            <div className="flex items-center">
-                                <input type="checkbox" className="mr-2" />
-                                <span>Age</span>
-                            </div>
-                            <div className="flex items-center">
-                                <input type="checkbox" className="mr-2" />
-                                <span>Sex</span>
-                            </div>
-                            <div className="flex items-center">
-                                <input type="checkbox" className="mr-2" />
-                                <span>Birth</span>
-                            </div>
-                        </div>
-                    </Card>
-                    <Card>
-                        <h2 className="card-title">Contact</h2>
-                        <div className="space-y-2">
-                            <div className="flex items-center justify-between">
-                                <span>Phone</span>
-                                <input type="checkbox" />
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <span>Email</span>
-                                <input type="checkbox" />
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <span>Address</span>
-                                <input type="checkbox" />
-                            </div>
-                        </div>
-                    </Card>
-                    <Card>
-                        <h2 className="card-title">Physical Information</h2>
-                        <div className="space-y-2">
-                            <div className="flex items-center justify-between">
-                                <span>Height</span>
-                                <input type="checkbox" />
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <span>Weight</span>
-                                <input type="checkbox" />
-                            </div>
-                        </div>
-                    </Card>
-                    <Card>
-                        <h2 className="card-title">Appointments</h2>
-                        <div className="flex space-y-2">
-                            <button className="button ">Upcoming</button>
-                            <button className="button ">Past</button>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="appointment-item">
-                                <div className="appointment-text">
-                                    <Calendar className="appointment-icon" size={16} />
-                                    <span>Appointment 1</span>
-                                </div>
-                                <X size={16} />
-                            </div>
-                            <div className="appointment-item">
-                                <div className="appointment-text">
-                                    <Calendar className="appointment-icon" size={16} />
-                                    <span>Appointment 2</span>
-                                </div>
-                                <X size={16} />
-                            </div>
-                        </div>
-                    </Card>
-                    <Card>
-                        <h2 className="card-title">Orders</h2>
-                        <div className="space-y-2">
-                            <div className="flex items-center">
-                                <input type="checkbox" className="mr-2" />
-                                <span>Order 1</span>
-                            </div>
-                            <div className="flex items-center">
-                                <input type="checkbox" className="mr-2" />
-                                <span>Order 2</span>
-                            </div>
-                        </div>
-                    </Card>
+        <div className="profile-page">
+            <div className="header">
+                <button className="back-button">➔</button>
+                <button className="logout-button">Log-Out</button>
+            </div>
+            <div className="welcome-section">
+                <div className="profile-pic"></div>
+                <div className="welcome-message">
+                    <h1>Welcome, Nayana!</h1>
+                    <p>Your health is our priority. Please take care of your health, and we’ll assist you in doing the same.</p>
+                </div>
+            </div>
+            <div className="info-section">
+                <div className="info-box appointments">
+                    <h2>Appointments:</h2>
+                    <p>Dr. Ben: 10:30pm (online) <br/> Cardiology</p>
+                    <p>Dr. John: 11:00am (offline) <br/> ENT</p>
+                </div>
+                <div className="info-box lab-results">
+                    <h2>Lab Results:</h2>
+                    <p>Blood test: AB+<br/> X-Ray Scan: waiting</p>
+                </div>
+                <div className="info-box profile-info">
+                    <h2>Profile:</h2>
+                    <p>E-Mail: idk@gmail.com <br/> Phone: 123456789 <br/> Address: Brooklyn, New York</p>
                 </div>
             </div>
         </div>
     );
-};
+}
 
-export default UserProfile;
+export default ProfilePage;
