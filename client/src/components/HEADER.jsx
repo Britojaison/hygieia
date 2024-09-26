@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from "../assets/imgs/logo.png";
 import Userimg from "../assets/imgs/user.svg"
 import { Link } from "react-router-dom";
+import { AuthContext } from '../AuthContext';
 
-function Header({ isLoggedIn }) {
-    
+function Header() {
+    const { isLoggedIn } = useContext(AuthContext);
     return (
         <div className="header">
             <Link to="/">
@@ -18,12 +19,12 @@ function Header({ isLoggedIn }) {
             </ul>
             <h2>
                 {isLoggedIn ? (
-                    <Link to="/profile"><img style={{width:'2.6rem'}} src={Userimg} alt='user' /></Link>
+                    <Link to="/profile"><img style={{ width: '2.6rem' }} src={Userimg} alt='user' /></Link>
                 ) : (
                     <Link to="/login">Login</Link>
-                    
+
                 )}
-                
+
             </h2>
         </div>
     );
