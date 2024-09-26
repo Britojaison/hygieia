@@ -1,0 +1,423 @@
+.lab-banner {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.lab-img-container {
+  position: relative;
+  display: inline-block;
+
+  img {
+    width: 963px;
+    /* max-width: 700px; */
+    height: 377px;
+    border-radius: 50px;
+  }
+}
+
+.lab-search-bar {
+  position: absolute;
+  bottom: -30px;
+  /* Adjust to overlap the image slightly */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+  input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.container{
+  margin: 0;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  background: linear-gradient(to top right, #90ee90, #b2fab4);
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.lab-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #d9e4d9; */
+}
+
+.details-btn, .add-cart-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.details-btn {
+  background-color: white;
+  color: black; 
+  border: 1px solid #ccc;
+}
+
+.details-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.add-cart-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-cart-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+/* Basic styling for all buttons */
+
+.lab-actions{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+/* For buttons with green outline */
+.button.outline {
+  background-color: transparent;
+  border: 2px solid #90ee90;
+  color: #2d5b2d;
+}
+
+.button.outline:hover {
+  background-color: #90ee90;
+  color: white;
+}
+
+.button-outline{
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid #90ee90;
+  color: #2d5b2d;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+}
+.button-outline:hover {
+  background-color: #90ee90;
+  color: white;
+}
+/* For buttons with solid green background */
+.button.solid {
+  background-color: #90ee90;
+  border: none;
+  color: white;
+}
+
+.button.solid:hover {
+  background-color: #78d478;
+}
+
+/* Flexbox layout for the button group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Optional: Add some horizontal lines above and below the button group */
+.button-group::before, .button-group::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #d9e4d9;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.most-booked-section{
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.most-booked-h2{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: rgba(0, 0, 0, 0.864);
+}
+.most-booked-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+.lab-desc{
+  margin-left: .7rem;
+  font-size: 1rem;
+}
+
+
+/* Overall Page Container */
+.lab-test-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  /* padding: 20px; */
+}
+
+/* .lab-banner {
+    background-color: #f0fff0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  } */
+
+/* .lab-banner h1 {
+    font-size: 2.5rem;
+    color: #333;
+  } */
+/*   
+  .search-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    padding: 10px 15px;
+    background-color: #85a27d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-icon:hover {
+    background-color: #6d8f5f;
+  }
+  
+  .checkups-section {
+    margin: 20px 0;
+  }
+  
+  .checkups-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkups-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .lab-card {
+    background-color: #e7f5e7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .lab-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .lab-card h3 span {
+    background-color: #a4d0a4;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .discounted-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .lab-card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .view-btn, .add-to-cart-btn {
+    background-color: #85a27d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-btn:hover, .add-to-cart-btn:hover {
+    background-color: #6d8f5f;
+  }
+  
+  .lab-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .action-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #85a27d;
+    background-color: #f0f7f0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .most-booked-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f1f9f1;
+    border-radius: 10px;
+  }
+  
+  .most-booked-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .most-booked-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .most-booked-text p {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .view-all-btn {
+    padding: 10px 20px;
+    background-color: #85a27d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #6d8f5f;
+  }
+  
+  .most-booked-image img {
+    width: 150px;
+    border-radius: 10px;
+  } */

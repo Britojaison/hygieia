@@ -1,29 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from "../assets/imgs/logo.png";
 import Userimg from "../assets/imgs/user.svg"
 import { Link } from "react-router-dom";
+import { AuthContext } from '../AuthContext';
 
-function Header({ isLoggedIn }) {
-    
+function Header() {
+    const { isLoggedIn } = useContext(AuthContext);
     return (
         <div className="header">
             <Link to="/">
                 <img className="logo" src={Logo} alt="logo" />
             </Link>
             <ul className="options">
-                <li><Link to="/">Pharmacy</Link></li>
+                <li><Link to="/pharm">Pharmacy</Link></li>
                 <li><Link to="/consult">Consultation</Link></li>
-                <li><a href="/">Lab Test</a></li>
+                <li><Link to="/labpage">Lab page</Link></li>
                 <li><a href="/">About us</a></li>
             </ul>
             <h2>
                 {isLoggedIn ? (
-                    <Link to="/profile"><img style={{width:'2.6rem'}} src={Userimg} alt='user' /></Link>
+                    <Link to="/profile"><img style={{ width: '2.6rem' }} src={Userimg} alt='user' /></Link>
                 ) : (
                     <Link to="/login">Login</Link>
-                    
+
                 )}
-                
+
             </h2>
         </div>
     );
