@@ -49,6 +49,9 @@ function LabTestPage() {
           <div className="cards-container">
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
+            <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
+            <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
+            
             {/* Add more cards as needed */}
           </div>
         </div>
@@ -67,13 +70,13 @@ function LabTestPage() {
         <div className="most-booked-text">
           <h2 className='most-booked-h2'>Most Booked <br /> Checkups</h2>
           <p className='lab-desc'>India’s fastest AI-powered & <br /> temperature-controlled supply chain to collect and test <br /> your blood in the freshest state.</p>
-          <button className="button outline">View All Checkups</button>
+          <button className="button-outline">View All Checkups</button>
         </div>
         <div className="most-booked-image">
           <img src={image2} alt="Most Booked Checkups" />
         </div>
       </section>
-      <button className='button outline'>veiw all checkups</button>
+      
       
 
       <Footer />

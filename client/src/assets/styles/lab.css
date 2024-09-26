@@ -59,9 +59,12 @@ h2 {
   margin-bottom: 20px;
   margin-left: 10px;
 }
+.container{
+  margin: 0;
+}
 .cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 .card {
@@ -107,6 +110,7 @@ h2 {
 .card-footer {
   display: flex;
   justify-content: space-between;
+  /* background-color: #d9e4d9; */
 }
 
 .details-btn, .add-cart-btn {
@@ -176,6 +180,23 @@ h2 {
   color: white;
 }
 
+.button-outline{
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid #90ee90;
+  color: #2d5b2d;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+}
+.button-outline:hover {
+  background-color: #90ee90;
+  color: white;
+}
 /* For buttons with solid green background */
 .button.solid {
   background-color: #90ee90;
