@@ -126,15 +126,13 @@ function MainPage() {
                 ))}
             </div>
 
-            {/* Carousel */}
-            <ImageCarousel />
+            <ImageCarousel />   
 
-            {/* Pharmacy Section Title */}
+            
             <div className="title">
                 <h2>PHARMACY</h2>
             </div>
 
-            {/* Product Container */}
             <div className="product-container">
                 {productsData.map(product => (
                     <div className="product-card" key={product.id}>

@@ -254,6 +254,32 @@ h2 {
   background-color: #f9f9f9;
   /* padding: 20px; */
 }
+@media (max-width: 768px) {
+  .lab-banner h1 {
+    font-size: 2rem;
+  }
+
+  .lab-search-bar input {
+    width:300px;
+  }
+  .lab-img-container img{
+    width: 570px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .most-booked-text h2 {
+    font-size: 2rem;
+  }
+
+  .most-booked-image img {
+    width: 200px;
+  }
+}
+
 
 /* .lab-banner {
     background-color: #f0fff0;

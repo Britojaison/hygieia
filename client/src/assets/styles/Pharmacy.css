@@ -3,7 +3,6 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    
 }
 
 .header-content {
@@ -35,7 +34,9 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #85a27d; 
+    background-color: #85a27d;
+    position: relative;
+    text-align: center;
 }
 
 .pharmacy-banner h1 {
@@ -44,21 +45,21 @@ nav ul li {
 }
 
 .title_pharm {
-    font-size: 150px; /* Reduced the font size for better alignment */
+    font-size: 7rem; /* Adjusted font size for responsiveness */
     font-weight: 700;
     color: rgb(22, 21, 21);
     z-index: 1;
-    position: relative; /* Ensures it stays above the image */
-    text-align: center; /* Centers the text horizontally */
+    position: relative;
+    text-align: center;
 }
 
 .pharmacy-banner img {
-    width: 430px; 
+    width: 300px; /* Responsive adjustment */
     position: absolute;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
-    z-index: 1; 
-    top:50px;/* Adjust the image position relative to the bottom */
+    z-index: 0;
+    top: 50px;
 }
 
 .categories {
@@ -131,6 +132,39 @@ nav ul li {
     background-color: #2c5237;
 }
 
-.hidden {
-    display: none;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title_pharm {
+        font-size: 5.5rem; /* Reduce font size on mobile */
+    }
+
+    .pharmacy-banner img {
+        width: 250px; /* Reduce image size */
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* Stack products on top of each other */
+    }
+
+    .add-to-cart {
+        padding: 8px 16px; /* Reduce button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .title_pharm {
+        font-size: 2rem; /* Further reduce font size for smaller devices */
+    }
+
+    .pharmacy-banner img {
+        width: 200px; /* Further reduce image size */
+    }
+
+    .add-to-cart {
+        font-size: 0.9rem; /* Adjust button text size */
+    }
+
+    .product-card {
+        padding: 15px; /* Slightly reduce padding */
+    }
 }

@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 .logo {
@@ -43,6 +44,8 @@ body {
     a {
       color: black;
       text-decoration: none;
+      float: left;
+      display: block;
     }
 
     a:hover {
@@ -53,10 +56,10 @@ body {
   }
 }
 
-.login-btn{
+.login-btn {
   text-decoration: none;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .container {
@@ -93,85 +96,4 @@ body {
 .button:hover {
   transform: scale(1.2);
   z-index: 1;
-}
-
-.container:hover .button:not(:hover) {
-  transform: scale(0.8);
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.button-1 {
-  background-color: hsl(120, 29%, 62%);
-}
-
-.button-2 {
-  background-color: #a4cfc0;
-}
-
-.button-3 {
-  background-color: #73ad83;
-}
-
-.button-4 {
-  background-color: #58977f;
-}
-
-.button-5 {
-  background-color: #83bb83;
-}
-.carousel-container {
-  max-width: 100%;
-  margin: auto;
-  border-radius: 60px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.carousel-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease-in-out;
-}
-.title{
-  text-align: center; /* Centers horizontally */
-  line-height: 100px; /* Set the same as container height */
-  height: 100px;  
-}
-.product-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-bottom: 20px; 
-}
-
-.product-card {
-    flex: 1 1 200px; 
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.product-card button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }

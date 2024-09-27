@@ -14,7 +14,7 @@ function Consultation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState('ALL CITIES');
 
-  const cities = ["Banglore", "Chennai", "Kochi", "Thrissur", "Kannur"];
+  const cities = ["Bangalore", "Chennai", "Kochi", "Thrissur", "Kannur"];
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -30,7 +30,7 @@ function Consultation() {
       <Header />
       <section className="consult-banner">
         <h2 className="title_consult">Consultation</h2>
-        <img src={tool} alt="stethscope" />
+        <img src={tool} alt="stethoscope" />
       </section>
 
       <div className="main-content">
@@ -50,13 +50,13 @@ function Consultation() {
               </ul>
             )}
           </div>
-          <input type="text" className="search-bar" placeholder="Search for doctors, Specialities, Symptoms, Hospitals etc." />
+          <input type="text" className="search-bar" placeholder="Search for doctors, Specialties, Symptoms, Hospitals etc." />
           <div className="appointment-section">
             <h3>Book an Appointment in 3 simple steps</h3>
             <div className="appointment-form">
               <input type="text" className="input-field" placeholder="Search location" />
               <input type="text" className="input-field" placeholder="Today" />
-              <input type="text" className="input-field" placeholder="Enter Speciality" />
+              <input type="text" className="input-field" placeholder="Enter Specialty" />
               <button className="submit-btn">SUBMIT</button>
             </div>
           </div>
