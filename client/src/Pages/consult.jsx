@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/HEADER";
 import Footer from "../components/footer";
+import { useNavigate } from "react-router-dom"; // For navigation
 import "../assets/styles/consult.css";
 import person from '../assets/person.png';
 import calendar from '../assets/calendar.png';
@@ -13,6 +14,7 @@ function Consultation() {
   const [isOnline, setIsOnline] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState('ALL CITIES');
+  const navigate = useNavigate(); // For page navigation
 
   const cities = ["Banglore", "Chennai", "Kochi", "Thrissur", "Kannur"];
 
@@ -23,6 +25,11 @@ function Consultation() {
   const handleCitySelect = (city) => {
     setSelectedCity(city);
     setIsDropdownOpen(false); // Close the dropdown after selecting a city
+  };
+
+  // Navigate to doctor details page
+  const handleDoctorSearch = () => {
+    navigate('/doctor-details'); // Navigate to the doctor details page
   };
 
   return (
@@ -50,7 +57,17 @@ function Consultation() {
               </ul>
             )}
           </div>
-          <input type="text" className="search-bar" placeholder="Search for doctors, Specialities, Symptoms, Hospitals etc." />
+          <div className="search-container">
+            <input
+              type="text"
+              className="search-bar"
+              placeholder="Search for doctors, Specialities, Symptoms, Hospitals etc."
+            />
+            <button className="search-btn" onClick={handleDoctorSearch}>
+              Search
+            </button>
+          </div>
+
           <div className="appointment-section">
             <h3>Book an Appointment in 3 simple steps</h3>
             <div className="appointment-form">
@@ -66,43 +83,44 @@ function Consultation() {
           <button className="contact-btn">📞 8934561-728</button>
           <h2>HOW DOCTOR CONSULTATION WORKS?</h2>
           <div className="toggle-buttons">
-            <button 
-              className={`toggle-btn ${isOnline ? 'active' : ''}`} 
+            <button
+              className={`toggle-btn ${isOnline ? 'active' : ''}`}
               onClick={() => setIsOnline(false)}
             >
               Online
             </button>
-            <button 
-              className={`toggle-btn ${!isOnline ? 'active' : ''}`} 
+            <button
+              className={`toggle-btn ${!isOnline ? 'active' : ''}`}
               onClick={() => setIsOnline(true)}
             >
               Offline
             </button>
           </div>
-          
+
           {isOnline ? (
             <div className="online-steps">
               <h3>HOW TO CONSULT DOCTOR ONLINE?</h3>
               <ul className="steps-list">
-                <li> <img src={person} alt='person' /> Choose a doctor</li>
-                <li> <img src={calendar} alt='calendar' /> Book a slot</li>
-                <li> <img src={cards} alt='credit-cards' /> Make payment</li>
-                <li> <img src={camera} alt='video-camera' /> Be present in the consult room on hygieia.com at the time of consult</li>
+                <li><img src={person} alt='person' /> Choose a doctor</li>
+                <li><img src={calendar} alt='calendar' /> Book a slot</li>
+                <li><img src={cards} alt='credit-cards' /> Make payment</li>
+                <li><img src={camera} alt='video-camera' /> Be present in the consult room on hygieia.com at the time of consult</li>
               </ul>
             </div>
           ) : (
             <div className="offline-steps">
               <h3>HOW TO CONSULT DOCTOR OFFLINE?</h3>
               <ul className="steps-list">
-                <li> <img src={person} alt='person' /> Choose a doctor</li>
-                <li> <img src={calendar} alt='calendar' /> Book a slot at the clinic</li>
-                <li> <img src={hospital} alt='hospital' /> Visit the doctor at the Hospital/Clinic</li>
-                <li> <img src={cards} alt='credit-cards' /> Make payment</li>
+                <li><img src={person} alt='person' /> Choose a doctor</li>
+                <li><img src={calendar} alt='calendar' /> Book a slot at the clinic</li>
+                <li><img src={hospital} alt='hospital' /> Visit the doctor at the Hospital/Clinic</li>
+                <li><img src={cards} alt='credit-cards' /> Make payment</li>
               </ul>
             </div>
           )}
         </div>
       </div>
+
       <Footer />
     </div>
   );
