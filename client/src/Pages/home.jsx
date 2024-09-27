@@ -4,9 +4,10 @@ import Footer from "../components/footer";
 function Home(){
     return(
         <>
-        <Header isLoggedIn={false} />
+        <Header isLoggedIn={true} />
         <Mainpage />
         <Footer />
+       
         </>
     )
 }

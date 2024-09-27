@@ -3,12 +3,12 @@ import Header from "../components/HEADER";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom"; // For navigation
 import "../assets/styles/consult.css";
-import person from '../assets/person.png';
-import calendar from '../assets/calendar.png';
-import cards from '../assets/credit-cards.png';
-import camera from '../assets/video-camera.png';
-import tool from '../assets/doctor_tools.png';
-import hospital from '../assets/hospital.png';
+import person from '../assets/imgs/person.png';
+import calendar from '../assets/imgs/calendar.png';
+import cards from '../assets/imgs/credit-cards.png';
+import camera from '../assets/imgs/video-camera.png';
+import tool from '../assets/imgs/doctor_tools.png';
+import hospital from '../assets/imgs/hospital.png';
 
 function Consultation() {
   const [isOnline, setIsOnline] = useState(true);

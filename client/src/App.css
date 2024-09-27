@@ -52,6 +52,13 @@ body {
     }
   }
 }
+
+.login-btn{
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+
 .container {
   display: flex;
   justify-content: space-between;

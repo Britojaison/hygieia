@@ -1,65 +1,68 @@
-import React, {useState} from 'react'
+import React, { useState, useContext } from 'react';
 import "../assets/styles/login.css";
-import { FaUser,FaLock } from "react-icons/fa";
-import axios from "axios"
-import { useNavigate,Link } from 'react-router-dom';
+import { FaLock, FaArrowLeft, FaPhone } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { AuthContext } from '../AuthContext'; 
 
-function login(){
-    const history= useNavigate()
-    const [username, setUsername] = useState("");
+function Login() {
+  const { login } = useContext(AuthContext);
+    const history = useNavigate();
+    const { setAuth } = useContext(AuthContext); // Access setAuth from context
+    const [phoneNumber, setPhoneNumber] = useState("");
     const [password, setPassword] = useState("");
-    async function handleSubmit (e) {
+
+    async function handleSubmit(e) {
         e.preventDefault();
-        // Implement login logic here
-        console.log(username)
-        await axios.post('http://localhost:5000/login',{username,password})
-        .then(res=>{
-            history("/")
-        })
-        .catch(res=>console.log(err));
-        
-    };
-  return (
-    <div className='body'>
-    <div className='wrapper'>
-        <form onSubmit={handleSubmit} action=''>
-            <h1>Login</h1>
-            <div className="input-box">
-                <input 
-                type='text'
-                placeholder='Username'
-                name="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required />
-                <FaUser className='icon'/>
-            </div>
-            <div className="input-box">
-                <input 
-                type='Password' 
-                placeholder='Password' 
-                name='password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required />
-                <FaLock className='icon' />
-            </div>
+        try {
+            const res = await axios.post('http://localhost:5000/login', { phoneNumber, password });
+            // Assuming the server returns user data and a token
+            //setAuth({ user: res.data.user, token: res.data.token }); // Update auth context
+            login();
+            history("/");
+        } catch (err) {
+            console.error(err);
 
-            <div className="remeber-forgot">
-                <label><input type='checkbox'/>Remember Me</label>
-                <a href='#'>Forgot Password?</a>
+            alert('Login failed');
+        }
+    }
+
+    return (
+        <div className='body'>
+            <div className='wrapper'>
+                <Link to="/" className="back-arrow">
+                    <FaArrowLeft />
+                </Link>
+                <form onSubmit={handleSubmit}>
+                    <h1>Login</h1>
+
+                    {/* Phone Number Field */}
+                    <div className="input-box">
+                        <input type='tel' placeholder='Phone Number' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required />
+                        <FaPhone className='icon' />
+                    </div>
+
+                    {/* Password Field */}
+                    <div className="input-box">
+                        <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                        <FaLock className='icon' />
+                    </div>
+
+                    <div className="remeber-forgot">
+                        <label><input type='checkbox' />Remember Me</label>
+                        <a href='#'>Forgot Password?</a>
+                    </div>
+
+                    <button type='submit'>Login</button>
+
+                    <div className="register-link">
+                        <p>Don't have an account? <Link className='signup' to="/signup">Register</Link></p>
+                    </div>
+                </form>
             </div>
-
-            <button type='submit'>Login</button>
-
-            <div className="register-link">
-                <p>Dont have an account?<Link className='signup' to="/signup">Register</Link></p>
-            </div>
-        </form>
-
-    </div>
-    </div>
-  )
+        </div>
+    );
 }
 
-export default login; 
+export default Login;

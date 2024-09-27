@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import Pharmacy from "../assets/pharmacy-icon.png";
-import notepad from "../assets/notepad.png";
-import hospital from "../assets/hospital.png";
-import video from "../assets/video.png";
-import labtests from "../assets/labtests.png";
-import vitamin from "../assets/vitaminb12.jpg";
-import dolo from "../assets/dolo.png";
-import syrup from "../assets/coughsyrup.png";
-import thiamin from "../assets/Thiamin.png";
-import collagen from "../assets/collagen.png";
+import Pharmacy from "../assets/imgs/pharmacy-icon.png";
+import notepad from "../assets/imgs/notepad.png";
+import hospital from "../assets/imgs/hospital.png";
+import video from "../assets/imgs/video.png";
+import labtests from "../assets/imgs/labtests.png";
+import vitamin from "../assets/imgs/vitaminb12.jpg";
+import dolo from "../assets/imgs/dolo.png";
+import syrup from "../assets/imgs/coughsyrup.png";
+import thiamin from "../assets/imgs/Thiamin.png";
+import collagen from "../assets/imgs/collagen.png";
 import ImageCarousel from './Carousel.jsx';
 import "../assets/styles/MainPage.css";
 
