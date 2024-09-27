@@ -4,7 +4,7 @@ import { FaLock, FaArrowLeft, FaPhone } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { AuthContext } from '../AuthContext'; // Import AuthContext
+import { AuthContext } from '../AuthContext'; 
 
 function Login() {
   const { login } = useContext(AuthContext);

@@ -21,7 +21,7 @@ function Header() {
                 {isLoggedIn ? (
                     <Link to="/profile"><img style={{ width: '2.6rem' }} src={Userimg} alt='user' /></Link>
                 ) : (
-                    <Link to="/login">Login</Link>
+                    <Link to="/login" className='login-btn'><p className='login-btn'>Login</p></Link>
 
                 )}
 
