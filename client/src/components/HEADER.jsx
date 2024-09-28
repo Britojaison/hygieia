@@ -14,7 +14,7 @@ function Header() {
             <ul className="options">
                 <li><Link to="/pharm">Pharmacy</Link></li>
                 <li><Link to="/consult">Consultation</Link></li>
-                <li><Link to="/labpage">Lab page</Link></li>
+                <li><Link to="/labpage">Lab</Link></li>
                 <li><a href="/">About us</a></li>
             </ul>
             <h2>

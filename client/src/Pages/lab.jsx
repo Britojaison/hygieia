@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/HEADER';  // Adjust according to your project structure
 import Footer from '../components/footer';
 import "../assets/styles/lab.css"; // Your CSS file for this page
-import exampleImage from '../assets/imgs/Image1.png'; // Replace with your image path
 import image2 from '../assets/imgs/image2.png';
 
 const Card = ({ labName, price, originalPrice }) => {
@@ -27,26 +26,20 @@ function LabTestPage() {
   return (
     <div className="lab-test-page">
       <Header />
+      <section className="lab-banner">
+                <h2 className="title_lab">Lab Test</h2>
+                </section>
 
       {/* Main Banner Section */}
-      <section className="lab-banner">
-        <h1>Your Medical LAB</h1>
-        <div className="lab-img-container">
-          <img src={exampleImage} alt="lab doc img" />
-          <div className="lab-search-bar">
-            <input type="text" placeholder="Search for Labs or Check-ups" />
-            <button className="search-icon">🔍</button>
-          </div>
-        </div>
-
-      </section>
-
+      
       {/* Full Body Checkups Section */}
       <section>
-        <h2>Full body checkups in Bangalore</h2>
+        <h2>Lab Tests</h2>
         <div className="container">
 
           <div className="cards-container">
+            <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
+            <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />

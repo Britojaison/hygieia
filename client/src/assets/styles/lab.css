@@ -1,3 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffff;
+  margin: 0;
+  padding: 0;
+  
+}
+.lab-banner {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85a27d; 
+}
+
+.lab-banner h1 {
+  color: black;
+  z-index: 1;
+}
+.lab-banner :hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+.title_lab {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: black;
+  outline: none;
+  text-align: center;
+}
 .lab-banner {
   text-align: center;
   position: relative;
@@ -9,17 +47,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-.lab-img-container {
-  position: relative;
-  display: inline-block;
-
-  img {
-    width: 963px;
-    /* max-width: 700px; */
-    height: 377px;
-    border-radius: 50px;
-  }
-}
 
 .lab-search-bar {
   position: absolute;
@@ -63,9 +90,10 @@ h2 {
   margin: 0;
 }
 .cards-container {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .card {
   background: linear-gradient(to top right, #90ee90, #b2fab4);

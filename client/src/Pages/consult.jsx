@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/HEADER";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom"; // For navigation
@@ -16,56 +16,119 @@ function Consultation() {
   const [selectedCity, setSelectedCity] = useState('ALL CITIES');
   const navigate = useNavigate(); // For page navigation
 
+  // State for the autocomplete functionality
+  const [searchTerm, setSearchTerm] = useState('');
+  const [suggestions, setSuggestions] = useState([]);
+  const [data, setData] = useState([]);
+
   const cities = ["Banglore", "Chennai", "Kochi", "Thrissur", "Kannur"];
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  // Handle navigation to doctors page
+const handleDoctorSearch = () => {
+  // You can pass searchTerm or other data as query parameters if needed
+  navigate(`/doctors?search=${searchTerm}`);
+};
 
   const handleCitySelect = (city) => {
     setSelectedCity(city);
     setIsDropdownOpen(false); // Close the dropdown after selecting a city
   };
 
-  // Navigate to doctor details page
-  const handleDoctorSearch = () => {
-    navigate('/doctor-details'); // Navigate to the doctor details page
+  // Mock data fetch (you can replace this with your real data later)
+  useEffect(() => {
+    // Mock data array
+    const mockData = [
+      { name: 'Dr. John Smith', speciality: 'Cardiologist' },
+      { name: 'Dr. Jane Doe', speciality: 'Dermatologist' },
+      { name: 'Dr. Adam Brown', speciality: 'Pediatrician' },
+      { name: 'Fever' },
+      { name: 'Cold' },
+      { name: 'General Checkup' },
+    ];
+    setData(mockData);
+  }, []);
+
+  // Handle input change to update suggestions
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    setSearchTerm(value);
+
+    if (value.length > 0) {
+      const filteredSuggestions = data.filter(item =>
+        item.name.toLowerCase().includes(value.toLowerCase()) ||
+        (item.speciality && item.speciality.toLowerCase().includes(value.toLowerCase()))
+      );
+      setSuggestions(filteredSuggestions);
+    } else {
+      setSuggestions([]);
+    }
   };
+
+  // Handle selection of a suggestion
+  const handleSuggestionClick = (suggestion) => {
+    setSearchTerm(suggestion.name);
+    setSuggestions([]);
+  };
+
 
   return (
     <div className="consultation-page">
       <Header />
       <section className="consult-banner">
         <h2 className="title_consult">Consultation</h2>
-        <img src={tool} alt="stethscope" />
+        <img src={tool} alt="stethoscope" />
       </section>
 
       <div className="main-content">
         <div className="find-doctors">
           <h2>FIND DOCTORS</h2>
-          <div className="dropdown">
-            <button className="dropdown-btn" onClick={handleDropdownToggle}>
-              {selectedCity}
-            </button>
-            {isDropdownOpen && (
-              <ul className="dropdown-menu">
-                {cities.map((city, index) => (
-                  <li key={index} onClick={() => handleCitySelect(city)}>
-                    {city}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
           <div className="search-container">
-            <input
-              type="text"
-              className="search-bar"
-              placeholder="Search for doctors, Specialities, Symptoms, Hospitals etc."
-            />
-            <button className="search-btn" onClick={handleDoctorSearch}>
-              Search
-            </button>
+            <div className="dropdown">
+              <button className="dropdown-btn" onClick={handleDropdownToggle}>
+                {selectedCity}
+              </button>
+              {isDropdownOpen && (
+                <ul className="dropdown-menu">
+                  {cities.map((city, index) => (
+                    <li key={index} onClick={() => handleCitySelect(city)}>
+                      {city}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {/* Autocomplete Search Bar */}
+            <div className="search-wrapper">
+              <input
+                type="text"
+                className="search-bar"
+                placeholder="Search for doctors, Specialities, Symptoms, Hospitals etc."
+                value={searchTerm}
+                onChange={handleInputChange}
+              />
+              <button className="search-btn" onClick={handleDoctorSearch}>
+                Search
+              </button>
+
+              {/* Display suggestions */}
+              {suggestions.length > 0 && (
+                <ul className="suggestions-list">
+                  {suggestions.map((suggestion, index) => (
+                    <li
+                      key={index}
+                      className="suggestion-item"
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      {suggestion.name} {suggestion.speciality && `(${suggestion.speciality})`}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
 
           <div className="appointment-section">

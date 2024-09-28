@@ -16,6 +16,19 @@ function Pharmacy() {
         { id: 4, imgSrc: collagen, imgAlt: "Collagen", name: 'Collagen', price: 1950 },
         { id: 5, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
         { id: 6, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
+        { id: 7, imgSrc: vitamin, imgAlt: "Vitamin B12", name: 'Vitamin B12', price: 1000 },
+        { id: 8, imgSrc: Thiamin, imgAlt: "Thiamin", name: 'Thiamin', price: 210 },
+        { id: 9, imgSrc: collagen, imgAlt: "Collagen", name: 'Collagen', price: 1950 },
+        { id: 10, imgSrc: collagen, imgAlt: "Collagen", name: 'Collagen', price: 1950 },
+        { id: 11, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
+        { id: 12, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
+        { id: 13, imgSrc: vitamin, imgAlt: "Vitamin B12", name: 'Vitamin B12', price: 1000 },
+        { id: 14, imgSrc: Thiamin, imgAlt: "Thiamin", name: 'Thiamin', price: 210 },
+        { id: 15, imgSrc: collagen, imgAlt: "Collagen", name: 'Collagen', price: 1950 },
+        { id: 16, imgSrc: collagen, imgAlt: "Collagen", name: 'Collagen', price: 1950 },
+        { id: 17, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
+        { id: 18, imgSrc: syrup, imgAlt: "Cough Syrup", name: 'Cough Syrup', price: 240 },
+        
     ];
 
     return (

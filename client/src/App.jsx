@@ -7,6 +7,8 @@ import Profile from './Pages/profile';
 import Signup from "./Pages/signup";
 import Consultation from './Pages/consult';
 import LabTestPage from "./Pages/lab";
+import Doctors from './Pages/doctors';
+import DoctorDetails from './Pages/DoctorDetails';
 import { AuthProvider } from './AuthContext';
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path='/signup' element={<Signup />} />
             <Route path='/consult' element={<Consultation />} />
             <Route path='/labpage' element={<LabTestPage />} />
+            <Route path="/doctors" element={<Doctors />} />
+            <Route path="/DoctorDetails/:doctorId" element={<DoctorDetails />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
