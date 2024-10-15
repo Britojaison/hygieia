@@ -7,23 +7,24 @@ import axios from 'axios';
 import { AuthContext } from '../AuthContext'; 
 
 function Login() {
-  const { login } = useContext(AuthContext);
-    const history = useNavigate();
-    const { setAuth } = useContext(AuthContext); // Access setAuth from context
+    const { login } = useContext(AuthContext); // Access login from AuthContext
+    const navigate = useNavigate();
     const [phoneNumber, setPhoneNumber] = useState("");
     const [password, setPassword] = useState("");
 
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/login', { phoneNumber, password });
-            // Assuming the server returns user data and a token
-            //setAuth({ user: res.data.user, token: res.data.token }); // Update auth context
-            login();
-            history("/");
+            const res = await axios.post('http://localhost:5000/login', { phoneNumber, password },{withCredentials: true});
+            login(); // Call login to set isLoggedIn to true and save to localStorage
+            console.log(res.data.user);
+            if (res.data.user.role === 'doctor') {
+                navigate('/DoctorHomePage');  // Redirect to Doctors page if user is a doctor
+            } else { 
+                navigate('/');  
+            }
         } catch (err) {
             console.error(err);
-
             alert('Login failed');
         }
     }
