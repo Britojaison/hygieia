@@ -12,7 +12,7 @@ const DoctorHomePage = () => {
     // Fetch doctor profile
     async function fetchDoctorProfile() {
       try {
-        const res = await axios.get('http://localhost:5000/doctor/profile');
+        const res = await axios.get('http://localhost:5000/doctor/profile',{withCredentials: true});
         setDoctorProfile(res.data);
       } catch (err) {
         console.error("Error fetching doctor profile:", err);

@@ -29,10 +29,6 @@ function LabTestPage() {
       <section className="lab-banner">
                 <h2 className="title_lab">Lab Test</h2>
                 </section>
-
-      {/* Main Banner Section */}
-      
-      {/* Full Body Checkups Section */}
       <section>
         <h2>Lab Tests</h2>
         <div className="container">
@@ -44,20 +40,15 @@ function LabTestPage() {
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
             <Card labName="Mariyam Labs" price="1000" originalPrice="2000" />
-            
-            {/* Add more cards as needed */}
           </div>
         </div>
       </section>
       <hr/>
-      {/* Buttons for Support, Lab Results, Cart */}
       <section className="lab-actions">
         <button class="button outline">Support</button>
         <button class="button solid">Lab Results</button>
         <button class="button outline">Cart</button>
       </section>
-
-      {/* Most Booked Checkups Section */}
       <hr />
       <section className="most-booked-section">
         <div className="most-booked-text">
@@ -69,9 +60,6 @@ function LabTestPage() {
           <img src={image2} alt="Most Booked Checkups" />
         </div>
       </section>
-      
-      
-
       <Footer />
     </div>
   );

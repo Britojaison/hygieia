@@ -9,12 +9,13 @@ import cards from '../assets/imgs/credit-cards.png';
 import camera from '../assets/imgs/video-camera.png';
 import tool from '../assets/imgs/doctor_tools.png';
 import hospital from '../assets/imgs/hospital.png';
+import axios from "axios";
 
 function Consultation() {
   const [isOnline, setIsOnline] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState('ALL CITIES');
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
@@ -25,14 +26,14 @@ function Consultation() {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-  
-const handleDoctorSearch = () => {
-  navigate(`/doctors?search=${searchTerm}`);
-};
+
+  const handleDoctorSearch = () => {
+    navigate(`/doctors?search=${searchTerm}`);
+  };
 
   const handleCitySelect = (city) => {
     setSelectedCity(city);
-    setIsDropdownOpen(false); 
+    setIsDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -40,11 +41,14 @@ const handleDoctorSearch = () => {
       { name: 'Dr. John Smith', speciality: 'Cardiologist' },
       { name: 'Dr. Jane Doe', speciality: 'Dermatologist' },
       { name: 'Dr. Adam Brown', speciality: 'Pediatrician' },
-      { name: 'Fever' },
-      { name: 'Cold' },
-      { name: 'General Checkup' },
+      ,
     ];
     setData(mockData);
+    axios.get('http://localhost:5000/doctorlist', { withCredentials: true })
+      .then(response => {
+        setData(response.data.doctors);
+        console.log(data);
+      })
   }, []);
 
   const handleInputChange = (event) => {
