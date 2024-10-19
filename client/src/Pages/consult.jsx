@@ -47,7 +47,7 @@ function Consultation() {
     axios.get('http://localhost:5000/doctorlist', { withCredentials: true })
       .then(response => {
         setData(response.data.doctors);
-        console.log(data);
+        // console.log(data);
       })
   }, []);
 

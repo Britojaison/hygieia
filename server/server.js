@@ -30,8 +30,6 @@ app.use(session({
 mongoose.connect('mongodb://localhost:27017/hy', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('MongoDB connection error:', err));
-
-// Define user schema
 const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     password: { type: String, required: true },
@@ -91,25 +89,17 @@ app.get('/profile', async (req, res) => {
 
 app.get('/doctorlist', async (req, res) => {
     try {
-        // Fetch doctors with role as 'doctor' and their doctor_info field
         const doctors = await User.find(
             { role: "doctor" },
-            { name: 1, doctor_info: 1, _id: 0 } // Project only name and doctor_info
+            { name: 1, doctor_info: 1, _id: 0 }
         );
 
-        // Log the raw data to inspect the fetched doctor objects
-        // console.log('Fetched Doctors:', doctors);
-
         const formattedDoctors = doctors.map(doctor => {
-            // console.log('Doctor Info:', doctor.doctor_info); // Log doctor_info before formatting
             return {
                 name: doctor.name,
-                speciality: doctor.doctor_info?.specialization || 'N/A' // Map specialization
+                speciality: doctor.doctor_info?.specialization || 'N/A'
             };
         });
-
-
-        // Send formatted doctor data as JSON response
         res.json({ doctors: formattedDoctors });
     } catch (err) {
         console.error('Error fetching doctors:', err);
@@ -119,52 +109,53 @@ app.get('/doctorlist', async (req, res) => {
 
 app.post('/doctorSearchQuery', async (req, res) => {
     try {
-      const { searchQuery } = req.body;
-      console.log('Search Query:', searchQuery);
-  
-      if (!searchQuery) {
-        return res.status(400).json({ error: 'Search query is required' });
-      }
-  
-      const result = await User.aggregate([
-        // Match only documents with role "doctor"
-        { $match: { role: "doctor" } },
-        
-        // Add a field to check if the name matches the provided doctor name
-        { $addFields: {
-          isSpecificDoctor: {
-            $cond: [
-              { $regexMatch: { input: "$name", regex: searchQuery, options: "i" } },
-              0,
-              1
-            ]
-          }
-        }},
-        
-        // Sort first by isSpecificDoctor (0 first), then by name
-        { $sort: {
-          isSpecificDoctor: 1,
-          name: 1
-        }},
-        
-        // Remove the temporary isSpecificDoctor field
-        { $project: {
-          isSpecificDoctor: 0,
-          password: 0 // Exclude password from the results for security
-        }}
-      ]);
-      console.log(result);
-      
-      res.json({doctorsList: result});
+        const { searchQuery } = req.body;
+        console.log('Search Query:', searchQuery);
+
+        if (!searchQuery) {
+            return res.status(400).json({ error: 'Search query is required' });
+        }
+
+        const result = await User.aggregate([
+            { $match: { role: "doctor" } },
+
+            {
+                $addFields: {
+                    isSpecificDoctor: {
+                        $cond: [
+                            { $regexMatch: { input: "$name", regex: searchQuery, options: "i" } },
+                            0,
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                $sort: {
+                    isSpecificDoctor: 1,
+                    name: 1
+                }
+            },
+
+            {
+                $project: {
+                    isSpecificDoctor: 0,
+                    password: 0
+                }
+            }
+        ]);
+        console.log(result);
+
+        res.json({ doctorsList: result });
     } catch (error) {
-      console.error('Error in doctor search:', error);
-      res.status(500).json({ error: 'An error occurred while searching for doctors' });
+        console.error('Error in doctor search:', error);
+        res.status(500).json({ error: 'An error occurred while searching for doctors' });
     }
-  });
+});
 
 
 
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
-    
+
 });
