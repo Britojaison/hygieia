@@ -18,32 +18,26 @@ const Signup = () => {
                 <input type="text" placeholder="Full Name" required />
                 <FaUser className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="email" placeholder="Email" required />
                 <FaEnvelope className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="tel" placeholder="Phone Number" required />
                 <FaPhone className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="text" placeholder="Address" required />
                 <FaHome className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="date" placeholder="Date of Birth" required />
                 <FaCalendar className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="password" placeholder="Password" required />
                 <FaLock className="icon" />
               </div>
-
               <div className="remember-forgot">
                 <label>
                   <input type="checkbox" /> Remember Me
@@ -61,49 +55,40 @@ const Signup = () => {
           <div>
             <form>
               <h1>Sign-Up as Doctor</h1>
-
               <div className="input-box">
                 <input type="text" placeholder="Doctor Name" required />
                 <FaUser className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="email" placeholder="Email" required />
                 <FaEnvelope className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="tel" placeholder="Phone Number" required />
                 <FaPhone className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="password" placeholder="Password" required />
                 <FaLock className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="text" placeholder="Qualification" required />
                 <FaGraduationCap className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="text" placeholder="Specialization" required />
                 <FaBriefcase className="icon" />
               </div>
-
               <div className="input-box">
                 <input type="text" placeholder="Address" required />
                 <FaHome className="icon" />
               </div>
-
               <div className="remember-forgot">
                 <label>
                   <input type="checkbox" /> Remember Me
                 </label>
                 <a href="#">Forgot Password?</a>
               </div>
-
               <button type="submit">Sign Up</button>
             </form>
           </div>

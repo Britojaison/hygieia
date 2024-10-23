@@ -1,3 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffff;
+  margin: 0;
+  padding: 0;
+  
+}
+.lab-banner {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85a27d; 
+}
+
+.lab-banner h1 {
+  color: black;
+  z-index: 1;
+}
+.lab-banner :hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+.title_lab {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: black;
+  outline: none;
+  text-align: center;
+}
 .lab-banner {
   text-align: center;
   position: relative;
@@ -9,17 +47,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-.lab-img-container {
-  position: relative;
-  display: inline-block;
-
-  img {
-    width: 963px;
-    /* max-width: 700px; */
-    height: 377px;
-    border-radius: 50px;
-  }
-}
 
 .lab-search-bar {
   position: absolute;
@@ -63,9 +90,10 @@ h2 {
   margin: 0;
 }
 .cards-container {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .card {
   background: linear-gradient(to top right, #90ee90, #b2fab4);
@@ -254,170 +282,64 @@ h2 {
   background-color: #f9f9f9;
   /* padding: 20px; */
 }
+@media (max-width: 768px) {
+  .lab-banner h1 {
+    font-size: 2rem;
+  }
 
-/* .lab-banner {
-    background-color: #f0fff0;
-    padding: 20px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  } */
+  .lab-search-bar input {
+    width:300px;
+  }
+  .lab-img-container img{
+    width: 570px;
+  }
 
-/* .lab-banner h1 {
-    font-size: 2.5rem;
-    color: #333;
-  } */
-/*   
-  .search-container {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
+  .cards-container {
+    flex-direction: column;
     align-items: center;
   }
-  
-  .search-bar {
-    width: 60%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    outline: none;
-    margin-right: 10px;
-  }
-  
-  .search-icon {
-    padding: 10px 15px;
-    background-color: #85a27d;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-icon:hover {
-    background-color: #6d8f5f;
-  }
-  
-  .checkups-section {
-    margin: 20px 0;
-  }
-  
-  .checkups-section h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .checkups-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .lab-card {
-    background-color: #e7f5e7;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 250px;
-    text-align: center;
-  }
-  
-  .lab-card h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .lab-card h3 span {
-    background-color: #a4d0a4;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .discounted-price {
-    text-decoration: line-through;
-    color: #888;
-  }
-  
-  .lab-card-actions {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .view-btn, .add-to-cart-btn {
-    background-color: #85a27d;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .view-btn:hover, .add-to-cart-btn:hover {
-    background-color: #6d8f5f;
-  }
-  
-  .lab-actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 30px 0;
-  }
-  
-  .action-btn {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 1px solid #85a27d;
-    background-color: #f0f7f0;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .most-booked-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 50px 0;
-    padding: 20px;
-    background-color: #f1f9f1;
-    border-radius: 10px;
-  }
-  
-  .most-booked-text {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
+
   .most-booked-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
   }
-  
-  .most-booked-text p {
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .view-all-btn {
-    padding: 10px 20px;
-    background-color: #85a27d;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .view-all-btn:hover {
-    background-color: #6d8f5f;
-  }
-  
+
   .most-booked-image img {
-    width: 150px;
-    border-radius: 10px;
-  } */
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .lab-banner {
+    height: 180px;
+  }
+
+  .title_lab {
+    font-size: 5 .5rem;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr); /* Stack the cards on small screens */
+  }
+
+  .card {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0;
+  }
+
+  .most-booked-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .most-booked-image img {
+    width: 100%; /* Ensure image scales down */
+    max-width: 300px;
+  }
+
+  .lab-actions {
+    flex-direction: column;
+    gap: 1rem; /* Reduce gap between buttons */
+  }
+}
