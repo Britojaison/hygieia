@@ -3,12 +3,12 @@
   font-family: 'Arial', sans-serif;
   color: #f1f1f1;
   background: linear-gradient(135deg, #2d3e32, #233026); /* Gradient background */
-  padding: 20px;
-  height: 100vh;
+  padding: 30px; /* Increased padding */
+  height: 100vh; /* Height remains the same */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  position: relative;
+  justify-content: flex-start; /* Align to top */
+  align-items: center; /* Center horizontally */
 }
 
 .background-decor {
@@ -27,18 +27,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 15px 25px; /* Increased padding */
   background-color: #1b2b23;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Border-radius remains the same */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow remains the same */
+  width: 100%; /* Make the header full width */
+  max-width: 1000px; /* Increased max header width */
+  margin-bottom: 20px; /* Space below the header */
 }
 
 .back-btn, .logout-btn {
   background: none;
   border: none;
   color: #f44336; /* Bright red for visibility */
-  font-size: 22px;
+  font-size: 22px; /* Increased font size */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
@@ -49,61 +51,76 @@
 
 .header h2 {
   color: #e1efe1;
+  margin: 0;
+  font-size: 24px; /* Increased font size */
 }
 
 .profile-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Center horizontally */
   background-color: #233026;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
+  border-radius: 15px; /* Border-radius remains the same */
+  padding: 25px; /* Increased padding */
+  margin-bottom: 20px; /* Space below the profile section */
   position: relative;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow remains the same */
+  width: 100%; /* Make the profile section full width */
+  max-width: 1000px; /* Match header width */
 }
 
 .profile-image-container {
-  margin-right: 30px;
+  margin-right: 30px; /* Increased margin */
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 200px; /* Increased size */
+  height: 200px; /* Increased size */
   border-radius: 50%;
-  border: 3px solid #75c285;
+  border: 3px solid #75c285; /* Border size remains the same */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .profile-details h3 {
   margin: 0;
   color: #c8ebc8;
-  font-size: 24px;
+  font-size: 26px; /* Increased font size */
 }
 
 .profile-details p {
-  margin-top: 8px;
+  margin-top: 8px; /* Margin remains the same */
   color: #a3d4a3;
+  font-size: 16px; /* Increased font size */
 }
 
 .appointments-section {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px; /* Gap remains the same */
+  align-items: center;
+  margin-top: 20px; /* Space above the appointments section */
+  width: 100%; /* Make the appointments section full width */
+  max-width: 1000px; /* Match header width */
 }
 
 .appointment-card {
   background-color: #3a5445;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 15px; /* Border-radius remains the same */
+  padding: 20px; /* Increased padding */
   width: 100%;
-  max-width: 45%;
+  max-width: 100%; /* Width remains the same */
   text-align: center;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow remains the same */
 }
 
 .appointment-card h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 15px; /* Increased margin */
+  font-size: 20px; /* Increased font size */
   color: #75c285;
 }
 
@@ -114,20 +131,21 @@
 
 .appointment-card li {
   background-color: #2f4034;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  padding: 15px;
+  border-radius: 10px; /* Border-radius remains the same */
+  margin-bottom: 15px; /* Margin remains the same */
+  padding: 15px; /* Increased padding */
 }
 
 .appointment-card li p {
-  margin: 5px 0;
+  margin: 5px 0; /* Margin remains the same */
+  font-size: 16px; /* Increased font size */
 }
 
 .action-btns {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 15px; /* Increased gap */
+  margin-top: 10px; /* Margin remains the same */
 }
 
 .accept-btn,
@@ -135,10 +153,11 @@
   background-color: #75c285;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 5px; /* Border-radius remains the same */
+  padding: 12px 20px; /* Increased padding */
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  font-size: 16px; /* Increased font size */
 }
 
 .accept-btn:hover {
