@@ -1,75 +1,154 @@
 /* doctorHomePage.css */
 .doctor-homepage {
-    margin: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .half-screen {
-    width: 48%; /* Adjust to make them half width */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  .doctor-profile {
-    text-align: center;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .appointment-requests ul,
-  .current-appointments-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .appointment-item {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  .appointment-item strong {
-    font-weight: bold;
-  }
-  
-  .accept-btn,
-  .decline-btn {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .accept-btn {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .decline-btn {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  .current-appointments-section {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #2d3e32, #233026); /* Gradient background */
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.background-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(circle at 30% 50%, rgba(117, 194, 133, 0.2), transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(75, 130, 88, 0.1), transparent 50%),
+              radial-gradient(circle at 90% 80%, rgba(45, 62, 50, 0.3), transparent 50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: #1b2b23;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn, .logout-btn {
+  background: none;
+  border: none;
+  color: #f44336; /* Bright red for visibility */
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-btn:hover, .logout-btn:hover {
+  transform: scale(1.1); /* Grow on hover */
+}
+
+.header h2 {
+  color: #e1efe1;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #233026;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image-container {
+  margin-right: 30px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #75c285;
+}
+
+.profile-details h3 {
+  margin: 0;
+  color: #c8ebc8;
+  font-size: 24px;
+}
+
+.profile-details p {
+  margin-top: 8px;
+  color: #a3d4a3;
+}
+
+.appointments-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.appointment-card {
+  background-color: #3a5445;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 45%;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow for depth */
+}
+
+.appointment-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #75c285;
+}
+
+.appointment-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.appointment-card li {
+  background-color: #2f4034;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.appointment-card li p {
+  margin: 5px 0;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.accept-btn,
+.decline-btn {
+  background-color: #75c285;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.accept-btn:hover {
+  background-color: #4d9f63;
+}
+
+.decline-btn {
+  background-color: #f44336;
+}
+
+.decline-btn:hover {
+  background-color: #d32f2f;
+}
