@@ -5,6 +5,20 @@
     line-height: 1.6;
     background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
   }
+
+  .logoinaboutus-container { /* Parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px; /* Vertically centers the image within the container */
+  }
+
+.logoinaboutus {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+
   
   .about-header {
     text-align: center;

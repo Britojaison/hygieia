@@ -1,15 +1,19 @@
 import React from 'react';
-import '../assets/styles/Aboutus.css'; 
+import '../assets/styles/Aboutus.css';
 import ceo from '../assets/imgs/CEO.jpg';
 import manager from '../assets/imgs/manager.jpg';
 import customer from '../assets/imgs/Customer.jpg';
+import logo from '../assets/imgs/logo.png';
 
 function AboutUs() {
   return (
     <div className="about-us-container">
+      <div class="logoinaboutus-container">
+        <img class="logoinaboutus" src={logo} alt="Logo" />
+      </div>
+
       {/* Header Section */}
       <header className="about-header" id="about-us">
-        <h1>About Hygeia</h1>
         <p>Your Trusted Partner in Healthcare and Wellness</p>
       </header>
 
