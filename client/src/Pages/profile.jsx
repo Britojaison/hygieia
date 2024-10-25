@@ -6,20 +6,22 @@ import axios from 'axios';
 const ProfilePage = () => {
     //const [userData, setUserData] = useState(null);
     const navigate = useNavigate();
-    
+    const [appointments, setAppointments] = useState([]);
+
     const [userData, setUserData] = useState({});
-    useEffect(()=>{
-       
+    useEffect(() => {
+
 
         axios.get('http://localhost:5000/profile', { withCredentials: true })
-        .then(response => {
-            console.log(response.data)
-            setUserData(response.data.user)
-        })
-        .catch(error => console.error(error));
-    
+            .then(response => {
+                console.log(response.data)
+                setUserData(response.data.user)
+                setAppointments(response.data.appointments);
+            })
+            .catch(error => console.error(error));
 
-    },[])
+
+    }, [])
 
     const handleLogout = () => {
         localStorage.removeItem('userId');  // Clear user data
@@ -46,8 +48,22 @@ const ProfilePage = () => {
             <div className="info-section">
                 <div className="info-box appointments">
                     <h2>Appointments:</h2>
-                    <p>{userData.appointments || 'No appointments available'}</p>
+                    {appointments.length > 0 ? (
+                        <ul>
+                            {appointments.map((appointment) => (
+                                <li key={appointment._id}>
+                                    <strong>Date:</strong> {new Date(appointment.dateTime).toLocaleDateString()} <br />
+                                    <strong>Time:</strong> {new Date(appointment.dateTime).toLocaleTimeString()} <br />
+                                    <strong>Reason:</strong> {appointment.reason} <br />
+                                    <strong>Notes:</strong> {appointment.   notes}
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p>No appointments available</p>
+                    )}
                 </div>
+
                 <div className="info-box lab-results">
                     <h2>Lab Results:</h2>
                     <p>{userData.labResults || 'No lab results available'}</p>
@@ -55,8 +71,8 @@ const ProfilePage = () => {
                 <div className="info-box profile-info">
                     <h2>Profile:</h2>
                     <p>
-                        E-Mail: {userData.email} <br /> 
-                        Phone: {userData.phone} <br /> 
+                        E-Mail: {userData.email} <br />
+                        Phone: {userData.phone} <br />
                         Address: {userData.address || 'No address available'}
                     </p>
                 </div>

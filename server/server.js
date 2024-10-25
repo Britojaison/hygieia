@@ -153,9 +153,12 @@ app.get('/profile', async (req, res) => {
         const user = await User.findById(req.session.userId);
         if (!user) return res.status(404).json("User not found");
 
+        const appointments = await Appointment.find({ patientId: req.session.userId });
+
         return res.json({
             message: "Profile fetched successfully",
-            user: user
+            user: user,
+            appointments: appointments
         });
 
     } catch (err) {
@@ -247,25 +250,7 @@ app.put('/appointment', async (req, res) => {
         console.error('Error saving appointment:', error);
         res.status(500).json({ error: "Server error while creating appointment" });
     }
-    // try {
-    //     const updatedAppointment = await Appointment.findByIdAndUpdate(
-    //         id,
-    //         { dateTime, status, reason, notes, updatedAt: new Date() },
-    //         { new: true }
-    //     );
-
-    //     if (!updatedAppointment) {
-    //         return res.status(404).json({ message: 'Appointment not found' });
-    //     }
-
-    //     res.json({
-    //         message: 'Appointment updated successfully',
-    //         appointment: updatedAppointment
-    //     });
-    // } catch (error) {
-    //     console.error('Error updating appointment:', error);
-    //     res.status(500).json({ message: 'Server error' });
-    // }
+    
 });
 
 
