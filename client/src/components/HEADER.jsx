@@ -14,17 +14,17 @@ function Header() {
                 <li><Link to="/pharm">Pharmacy</Link></li>
                 <li><Link to="/consult">Consultation</Link></li>
                 <li><Link to="/labpage">Lab</Link></li>
-                <li><a href="/">About us</a></li>
+                <li><Link to="/aboutus">About us</Link></li>
                 
             </ul>
-            <h2>
+            <h2 className='right'>
                 {isLoggedIn ? (
                     <Link to="/profile"><img style={{ width: '2.6rem' }} src={Userimg} alt='user' /></Link>
                 ) : (
                     <Link to="/login" className='login-btn'><p className='login-btn'>Login</p></Link>
 
                 )}
-
+                <Link to="/cart" className='login-btn'><p className='login-btn'>cart</p></Link>
             </h2>
         </div>
     );

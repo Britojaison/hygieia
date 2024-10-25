@@ -11,6 +11,8 @@ import Doctors from './Pages/doctors';
 import DoctorDetails from './Pages/DoctorDetails';
 import { AuthProvider } from './AuthContext';
 import DoctorHomePage from './Pages/DoctorHomePage';
+import Aboutus from './Pages/About-us';
+import Cart from './components/cart';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/DoctorDetails/:doctorId" element={<DoctorDetails />} />
             <Route path="/DoctorHomePage" element={<DoctorHomePage />} />
+            <Route path="/aboutus" element={<Aboutus />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
