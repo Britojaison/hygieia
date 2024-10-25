@@ -47,7 +47,7 @@ const DoctorHomePage = () => {
   return (
     <div className="doctor-homepage">
       <div className="background-decor"></div>
-      <header className="header">
+      <header className="doctorheader">
         <button className="back-btn"></button>
         <h2>Welcome, Dr. {doctorProfile?.name || 'Doctor'}</h2>
         <button className="logout-btn"><FaSignOutAlt /></button>
