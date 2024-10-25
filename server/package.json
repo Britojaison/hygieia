@@ -22,7 +22,7 @@
     "webrtc-adapter": "^9.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.7"
   },
   "type": "module"
 }
