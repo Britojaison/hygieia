@@ -5,7 +5,10 @@ import banner3 from '../assets/imgs/banner3.jpg';
 import banner2 from '../assets/imgs/banner2.png';    
 
 const ImageCarousel = () => (
-    <div className="carousel-container">
+    <div
+        className="carousel-container"
+        style={{ height: '500px' }} // Set height directly
+    >
         <Carousel
             showThumbs={false}
             autoPlay
@@ -17,16 +20,29 @@ const ImageCarousel = () => (
             showArrows={false}
         >
             <div className="carousel-card">
-                <img src={banner1} alt="Banner 1" className="carousel-image" />
+                <img
+                    src={banner1}
+                    alt="Banner 1"
+                    className="carousel-image"
+                    style={{ height: '500px' }} // Set height directly
+                />
             </div>
             <div className="carousel-card">
-                <img src={banner2} alt="Banner 2" className="carousel-image" />
+                <img
+                    src={banner2}
+                    alt="Banner 2"
+                    className="carousel-image"
+                    style={{ height: '500px' }} // Set height directly
+                />
             </div>
             <div className="carousel-card">
-                <img src={banner3} alt="Banner 3" className="carousel-image" />
+                <img
+                    src={banner3}
+                    alt="Banner 3"
+                    className="carousel-image"
+                    style={{ height: '500px' }} // Set height directly
+                />
             </div>
         </Carousel>
     </div>
 );
-
-export default ImageCarousel;
