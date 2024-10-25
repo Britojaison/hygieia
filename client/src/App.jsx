@@ -11,6 +11,7 @@ import Doctors from './Pages/doctors';
 import DoctorDetails from './Pages/DoctorDetails';
 import { AuthProvider } from './AuthContext';
 import DoctorHomePage from './Pages/DoctorHomePage';
+import VideoCallComponent from './VideoCallComponent';
 import Aboutus from './Pages/About-us';
 import Cart from './components/cart';
 
@@ -35,6 +36,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </AuthProvider>
+      {/* <VideoCallComponent/> */}
     </>
   );
 }
