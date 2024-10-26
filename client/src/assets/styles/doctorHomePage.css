@@ -49,10 +49,10 @@
   transform: scale(1.1); /* Grow on hover */
 }
 
-.header h2 {
-  color: #e1efe1;
+.doctorheade {
+  color: #ffffff;
   margin: 0;
-  font-size: 24px; /* Increased font size */
+  font-size: 30px; /* Increased font size */
 }
 
 .profile-section {

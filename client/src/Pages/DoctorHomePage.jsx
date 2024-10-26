@@ -49,7 +49,7 @@ const DoctorHomePage = () => {
       <div className="background-decor"></div>
       <header className="doctorheader">
         <button className="back-btn"></button>
-        <h2>Welcome, Dr. {doctorProfile?.name || 'Doctor'}</h2>
+        <h2 className='doctorheade'>Welcome, Dr. {doctorProfile?.name || 'Doctor'}</h2>
         <button className="logout-btn"><FaSignOutAlt /></button>
       </header>
 
